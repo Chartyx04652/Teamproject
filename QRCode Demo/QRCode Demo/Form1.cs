@@ -29,7 +29,7 @@ namespace QRCode_Demo
         {
             var form2 = new Form2();
             form2.Show();
-            this.Hide();
+            this.Hide();   admin    
         }
     }
 }
