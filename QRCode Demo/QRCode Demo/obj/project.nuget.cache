@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t4Xn9W/g6yIOBbQvD6msyC0tU8o3pGUEu3L40aWAVGVCVN/ulizCYPar1NN8zMZCSzbEjxiSBGZKNSwgjS+G8A==",
+  "dgSpecHash": "xgc32XlQFPzgSvJkKyBffpNR/hIOQHxmQDhvrDoMWMuqBEXuSjzmYFNZgw5i6GeXwnAvkAF/dmel9akuONUFvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Adachi Tenka\\source\\repos\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj",
+  "projectFilePath": "C:\\Users\\Adachi Tenka\\Desktop\\teamproj\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Adachi Tenka\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
     "C:\\Users\\Adachi Tenka\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
