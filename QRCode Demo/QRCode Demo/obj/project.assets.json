@@ -337,11 +337,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Adachi Tenka\\Desktop\\teamproj\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj",
+      "projectUniqueName": "C:\\Users\\Adachi Tenka\\Desktop\\teamproj\\Teamproject\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj",
       "projectName": "QRCode Demo",
-      "projectPath": "C:\\Users\\Adachi Tenka\\Desktop\\teamproj\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj",
+      "projectPath": "C:\\Users\\Adachi Tenka\\Desktop\\teamproj\\Teamproject\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj",
       "packagesPath": "C:\\Users\\Adachi Tenka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Adachi Tenka\\Desktop\\teamproj\\QRCode Demo\\QRCode Demo\\obj\\",
+      "outputPath": "C:\\Users\\Adachi Tenka\\Desktop\\teamproj\\Teamproject\\QRCode Demo\\QRCode Demo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Adachi Tenka\\AppData\\Roaming\\NuGet\\NuGet.Config",
