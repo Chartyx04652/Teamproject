@@ -332,19 +332,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Adachi Tenka\\.nuget\\packages\\": {}
+    "C:\\Users\\Kodi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Adachi Tenka\\Desktop\\teamproj\\Teamproject\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj",
+      "projectUniqueName": "E:\\Teamproject\\Teamproject\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj",
       "projectName": "QRCode Demo",
-      "projectPath": "C:\\Users\\Adachi Tenka\\Desktop\\teamproj\\Teamproject\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj",
-      "packagesPath": "C:\\Users\\Adachi Tenka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Adachi Tenka\\Desktop\\teamproj\\Teamproject\\QRCode Demo\\QRCode Demo\\obj\\",
+      "projectPath": "E:\\Teamproject\\Teamproject\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj",
+      "packagesPath": "C:\\Users\\Kodi\\.nuget\\packages\\",
+      "outputPath": "E:\\Teamproject\\Teamproject\\QRCode Demo\\QRCode Demo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Adachi Tenka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kodi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -402,7 +402,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   },

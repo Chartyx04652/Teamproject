@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "bPMFYPK8SckyEHLM/ge+/GbECS/DWddwoDNdop9+4QFNX1PXol8hZhsLbYDoyhAxkD5uMuLz4kW6CfQSsxzFqA==",
+  "dgSpecHash": "dW0m6N3VgolZZ4uchEqznb0tnal6WXJm6+qTYu5syj7DCc4JIkR7CC8rotHyauLM9hXalgeY4igV/fcnzNZaNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Adachi Tenka\\Desktop\\teamproj\\Teamproject\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj",
+  "projectFilePath": "E:\\Teamproject\\Teamproject\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Adachi Tenka\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
-    "C:\\Users\\Adachi Tenka\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
-    "C:\\Users\\Adachi Tenka\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512",
-    "C:\\Users\\Adachi Tenka\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
-    "C:\\Users\\Adachi Tenka\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",
-    "C:\\Users\\Adachi Tenka\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
-    "C:\\Users\\Adachi Tenka\\.nuget\\packages\\zxing.net\\0.16.8\\zxing.net.0.16.8.nupkg.sha512"
+    "C:\\Users\\Kodi\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
+    "C:\\Users\\Kodi\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
+    "C:\\Users\\Kodi\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512",
+    "C:\\Users\\Kodi\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Kodi\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",
+    "C:\\Users\\Kodi\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\Kodi\\.nuget\\packages\\zxing.net\\0.16.8\\zxing.net.0.16.8.nupkg.sha512"
   ],
   "logs": [
     {

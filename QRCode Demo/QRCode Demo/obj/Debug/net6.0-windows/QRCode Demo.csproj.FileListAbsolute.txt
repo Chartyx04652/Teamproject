@@ -46,3 +46,27 @@ C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QRCode Demo\QRCode Demo\obj\D
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QRCode Demo\QRCode Demo\obj\Debug\net6.0-windows\QRCode Demo.pdb
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QRCode Demo\QRCode Demo\obj\Debug\net6.0-windows\QRCode Demo.genruntimeconfig.cache
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QRCode Demo\QRCode Demo\obj\Debug\net6.0-windows\ref\QRCode Demo.dll
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\bin\Debug\net6.0-windows\QRCode Demo.exe
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\bin\Debug\net6.0-windows\QRCode Demo.deps.json
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\bin\Debug\net6.0-windows\QRCode Demo.runtimeconfig.json
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\bin\Debug\net6.0-windows\QRCode Demo.dll
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\bin\Debug\net6.0-windows\QRCode Demo.pdb
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\bin\Debug\net6.0-windows\AForge.dll
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\bin\Debug\net6.0-windows\AForge.Video.dll
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\bin\Debug\net6.0-windows\QRCoder.dll
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\bin\Debug\net6.0-windows\zxing.dll
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\obj\Debug\net6.0-windows\QRCode Demo.csproj.AssemblyReference.cache
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\obj\Debug\net6.0-windows\QRCode_Demo.Form1.resources
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\obj\Debug\net6.0-windows\QRCode_Demo.Form2.resources
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\obj\Debug\net6.0-windows\QRCode Demo.csproj.GenerateResource.cache
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\obj\Debug\net6.0-windows\QRCode Demo.GeneratedMSBuildEditorConfig.editorconfig
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\obj\Debug\net6.0-windows\QRCode Demo.AssemblyInfoInputs.cache
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\obj\Debug\net6.0-windows\QRCode Demo.AssemblyInfo.cs
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\obj\Debug\net6.0-windows\QRCode Demo.csproj.CoreCompileInputs.cache
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\obj\Debug\net6.0-windows\QRCode Demo.csproj.CopyComplete
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\obj\Debug\net6.0-windows\QRCode Demo.dll
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\obj\Debug\net6.0-windows\refint\QRCode Demo.dll
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\obj\Debug\net6.0-windows\QRCode Demo.pdb
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\obj\Debug\net6.0-windows\QRCode Demo.genruntimeconfig.cache
+E:\Teamproject\Teamproject\QRCode Demo\QRCode Demo\obj\Debug\net6.0-windows\ref\QRCode Demo.dll
