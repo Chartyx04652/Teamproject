@@ -9,3 +9,14 @@ D:\IDM\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.csproj.GenerateResource
 D:\IDM\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.csproj.CoreCompileInputs.cache
 D:\IDM\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.exe
 D:\IDM\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.pdb
+E:\Teamproject\Teamproject\QrCodeSystem\QrSystem\QrSystem\bin\Debug\QrSystem.exe.config
+E:\Teamproject\Teamproject\QrCodeSystem\QrSystem\QrSystem\bin\Debug\QrSystem.exe
+E:\Teamproject\Teamproject\QrCodeSystem\QrSystem\QrSystem\bin\Debug\QrSystem.pdb
+E:\Teamproject\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.csproj.AssemblyReference.cache
+E:\Teamproject\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.csproj.SuggestedBindingRedirects.cache
+E:\Teamproject\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.Form1.resources
+E:\Teamproject\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.Properties.Resources.resources
+E:\Teamproject\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.csproj.GenerateResource.cache
+E:\Teamproject\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.csproj.CoreCompileInputs.cache
+E:\Teamproject\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.exe
+E:\Teamproject\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.pdb
