@@ -28,3 +28,18 @@ C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\WindowsFormsApp1\WindowsForms
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+E:\Teamproject\Teamproject\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\Teamproject\Teamproject\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\Teamproject\Teamproject\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\Teamproject\Teamproject\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\QRCoder.dll
+E:\Teamproject\Teamproject\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+E:\Teamproject\Teamproject\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+E:\Teamproject\Teamproject\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\Teamproject\Teamproject\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Main.resources
+E:\Teamproject\Teamproject\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\Teamproject\Teamproject\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Visitors_Account.resources
+E:\Teamproject\Teamproject\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\Teamproject\Teamproject\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\Teamproject\Teamproject\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+E:\Teamproject\Teamproject\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\Teamproject\Teamproject\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
