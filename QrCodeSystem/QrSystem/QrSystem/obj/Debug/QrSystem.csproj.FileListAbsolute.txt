@@ -1,0 +1,11 @@
+D:\IDM\QrCodeSystem\QrSystem\QrSystem\bin\Debug\QrSystem.exe.config
+D:\IDM\QrCodeSystem\QrSystem\QrSystem\bin\Debug\QrSystem.exe
+D:\IDM\QrCodeSystem\QrSystem\QrSystem\bin\Debug\QrSystem.pdb
+D:\IDM\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.csproj.AssemblyReference.cache
+D:\IDM\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.csproj.SuggestedBindingRedirects.cache
+D:\IDM\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.Form1.resources
+D:\IDM\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.Properties.Resources.resources
+D:\IDM\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.csproj.GenerateResource.cache
+D:\IDM\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.csproj.CoreCompileInputs.cache
+D:\IDM\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.exe
+D:\IDM\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.pdb
