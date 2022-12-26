@@ -9,6 +9,7 @@ D:\IDM\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.csproj.GenerateResource
 D:\IDM\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.csproj.CoreCompileInputs.cache
 D:\IDM\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.exe
 D:\IDM\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.pdb
+<<<<<<< HEAD
 E:\Teamproject\Teamproject\QrCodeSystem\QrSystem\QrSystem\bin\Debug\QrSystem.exe.config
 E:\Teamproject\Teamproject\QrCodeSystem\QrSystem\QrSystem\bin\Debug\QrSystem.exe
 E:\Teamproject\Teamproject\QrCodeSystem\QrSystem\QrSystem\bin\Debug\QrSystem.pdb
@@ -20,3 +21,16 @@ E:\Teamproject\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.csp
 E:\Teamproject\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.csproj.CoreCompileInputs.cache
 E:\Teamproject\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.exe
 E:\Teamproject\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.pdb
+=======
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrCodeSystem\QrSystem\QrSystem\bin\Debug\QrSystem.exe.config
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrCodeSystem\QrSystem\QrSystem\bin\Debug\QrSystem.exe
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrCodeSystem\QrSystem\QrSystem\bin\Debug\QrSystem.pdb
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.csproj.AssemblyReference.cache
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.Form1.resources
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.Properties.Resources.resources
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.csproj.GenerateResource.cache
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.csproj.CoreCompileInputs.cache
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.exe
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrCodeSystem\QrSystem\QrSystem\obj\Debug\QrSystem.pdb
+>>>>>>> 28a9345750c9582a2f2997e8f375d5e942444a29
