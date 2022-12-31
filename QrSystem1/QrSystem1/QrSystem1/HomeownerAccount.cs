@@ -28,7 +28,7 @@ namespace QrSystem1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close(); 
             Createnewaccount frm = new Createnewaccount();
             frm.Show();
         }
