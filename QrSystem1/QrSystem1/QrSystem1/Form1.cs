@@ -41,7 +41,7 @@ namespace QrSystem1
             this.Hide();
             HomeownersHistory ss = new HomeownersHistory();
             ss.Show();
-            //comment
+            
         }
     }
 }
