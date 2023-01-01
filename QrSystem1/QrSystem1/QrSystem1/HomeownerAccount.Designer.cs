@@ -155,6 +155,7 @@
             this.textBox2.TabIndex = 25;
             this.textBox2.Text = "Lot No.";
             this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave_1);
             // 
             // button2
             // 
