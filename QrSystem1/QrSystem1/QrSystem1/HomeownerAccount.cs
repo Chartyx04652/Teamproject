@@ -120,14 +120,29 @@ namespace QrSystem1
         public string conString = "Data Source=DESKTOP-RVS1I23\\SQLEXPRESS;Initial Catalog=QrSystem;Integrated Security=True";
         private void button2_Click(object sender, EventArgs e)
         {
-            if (!(NameText.Text.Equals("Full Name") || textBox1.Text.Equals("Blk No.") || textBox2.Text.Equals("Lot No.") || ContactText.Text.Equals("Contact No.")))
+            var type = ContactText.GetType();
+
+            if (NameText.Text.Equals("Full Name") || textBox1.Text.Equals("Blk No.") || textBox2.Text.Equals("Lot No.") || ContactText.Text.Equals("Contact No."))
+            {
+                MessageBox.Show("Please fill up empty form/s.");
+            }
+            else if (ContactText.Text.Length < 11)
+            {
+                MessageBox.Show("Contact no. must be atleast 11 digits long.");
+            }
+            else if (!type.Equals(typeof(int)))
+            {
+                MessageBox.Show("Contact no. must only contains integers");
+            }
+
+            else if (!(NameText.Text.Equals("Full Name") || textBox1.Text.Equals("Blk No.") || textBox2.Text.Equals("Lot No.") || ContactText.Text.Equals("Contact No.")))
             {
                 QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
                 var Mydata = NameText.Text;
                 var Mydata1 = textBox1.Text; //block no
                 var Mydata2 = textBox2.Text; //lot no
                 var Mydata3 = ContactText.Text;
-                
+
                 var Mydata4 = Mydata + "," + Mydata1 + "," + Mydata2 + "," + Mydata3;
                 var Mydata5 = QG.CreateQrCode(Mydata4, QRCoder.QRCodeGenerator.ECCLevel.H);
                 var code = new QRCoder.QRCode(Mydata5);
@@ -144,17 +159,9 @@ namespace QrSystem1
                 }
 
             }
-            else if (NameText.Text.Equals("Full Name") || textBox1.Text.Equals("Blk No.") || textBox2.Text.Equals("Lot No.") || ContactText.Text.Equals("Contact No."))
-            {
-                MessageBox.Show("Please fill up empty form/s.");
-            }
-
-            
-        }
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
 
         }
+
         
 
         
