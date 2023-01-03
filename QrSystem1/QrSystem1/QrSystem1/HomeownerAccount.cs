@@ -119,7 +119,8 @@ namespace QrSystem1
             }
         }
 
-        public string conString = "Data Source=DESKTOP-RVS1I23\\SQLEXPRESS;Initial Catalog=QrSystem;Integrated Security=True";
+        
+
         private void button2_Click(object sender, EventArgs e)
         {
             int number;
@@ -159,15 +160,11 @@ namespace QrSystem1
                     var code = new QRCoder.QRCode(Mydata5);
                     pictureBox1.Image = code.GetGraphic(3);
 
-                    SqlConnection con = new SqlConnection(conString);
-                    con.Open();
-                    if (con.State == System.Data.ConnectionState.Open)
-                    {
-                        string q = "insert into HO_Account(ID, Name, Block_Number, Lot_Number, Contact_Number) values('" + "','" + NameText.Text.ToString() + "','" + textBox1.Text.ToString() + "','" + textBox2.Text.ToString() + "','" + ContactText.Text.ToString() + "')";
-                        SqlCommand cmd = new SqlCommand(q, con);
-                        cmd.ExecuteNonQuery();
-                        MessageBox.Show("Account Added");
-                    }
+                    string executable = System.Reflection.Assembly.GetExecutingAssembly().Location;
+                    string path = (System.IO.Path.GetDirectoryName(executable));
+
+                    AppDomain.CurrentDomain.SetData("DataDirectory", path);
+                    SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"|DataDirectory|\\Database1.mdf;Integrated Security=True");
 
                 }
             }
