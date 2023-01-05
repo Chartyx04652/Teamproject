@@ -165,6 +165,14 @@ namespace QrSystem1
 
                     AppDomain.CurrentDomain.SetData("DataDirectory", path);
                     SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"|DataDirectory|\\Database1.mdf;Integrated Security=True");
+                    conn.Open();
+
+                    if (conn.State == System.Data.ConnectionState.Open)
+                    {
+                        string q = "insert into HO_Account(ID, fullName, blockNo, lotNo, contactNo) values ('" + "','" +NameText.Text.ToString() + "','" + textBox1.Text.ToString() + "','" + textBox2.Text.ToString() + "','" + ContactText.Text.ToString()+ "')";
+                        SqlCommand cmd = new SqlCommand(q,conn);
+                        cmd.ExecuteNonQuery();
+                    }
 
                 }
             }

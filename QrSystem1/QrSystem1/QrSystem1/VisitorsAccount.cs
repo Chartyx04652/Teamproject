@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace QrSystem1
 {
@@ -79,6 +80,20 @@ namespace QrSystem1
             else if (NameText1.Text.Equals("Full Name") || PurposeOfVisit.Text.Equals("Purpose of Visit"))
             {
                 MessageBox.Show("Please fill up empty form/s.");
+
+                string executable = System.Reflection.Assembly.GetExecutingAssembly().Location;
+                string path = (System.IO.Path.GetDirectoryName(executable));
+
+                AppDomain.CurrentDomain.SetData("DataDirectory", path);
+                SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"|DataDirectory|\\Database1.mdf;Integrated Security=True");
+                conn.Open();
+
+                if (conn.State == System.Data.ConnectionState.Open)
+                {
+                    string q = "insert into Vis_Account(ID, fullName, Purpose_of_Visit) values ('" + "','" + NameText1.Text.ToString() + "','" + PurposeOfVisit.Text.ToString() + "')";
+                    SqlCommand cmd = new SqlCommand(q, conn);
+                    cmd.ExecuteNonQuery();
+                }
             }
         }
     }
