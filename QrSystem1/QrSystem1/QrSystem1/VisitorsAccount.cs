@@ -21,7 +21,7 @@ namespace QrSystem1
         {
             if (NameText1.Text == "Full Name")
             {
-                NameText1.Text = " ";
+                NameText1.Text = "";
 
                 NameText1.ForeColor = Color.Black;
             }
@@ -29,7 +29,7 @@ namespace QrSystem1
 
         private void NameText1_Leave(object sender, EventArgs e)
         {
-            if (NameText1.Text == " ")
+            if (NameText1.Text.Trim().Length == 0)
             {
                 NameText1.Text = "Full Name";
 
@@ -41,7 +41,7 @@ namespace QrSystem1
         {
             if (PurposeOfVisit.Text == "Purpose of Visit")
             {
-                PurposeOfVisit.Text = " ";
+                PurposeOfVisit.Text = "";
 
                 PurposeOfVisit.ForeColor = Color.Black;
             }
@@ -49,7 +49,7 @@ namespace QrSystem1
 
         private void PurposeOfVisit_Leave(object sender, EventArgs e)
         {
-            if (PurposeOfVisit.Text == " ")
+            if (PurposeOfVisit.Text.Trim().Length == 0)
             {
                 PurposeOfVisit.Text = "Purpose of Visit";
 
@@ -66,10 +66,20 @@ namespace QrSystem1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
-            var Mydata = QG.CreateQrCode(NameText1.Text, QRCoder.QRCodeGenerator.ECCLevel.H);
-            var code = new QRCoder.QRCode(Mydata);
-            pictureimage1.Image = code.GetGraphic(3);
+            if (!(NameText1.Text.Equals("Full Name") || PurposeOfVisit.Text.Equals("Purpose of Visit")))
+            {
+                QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
+                var Mydata = NameText1.Text;
+                var Mydata1 = PurposeOfVisit.Text;
+                var Mydata2 = NameText1.Text + "," + PurposeOfVisit.Text;
+                var Mydata3 = QG.CreateQrCode(Mydata2, QRCoder.QRCodeGenerator.ECCLevel.H);
+                var code = new QRCoder.QRCode(Mydata3);
+                pictureimage1.Image = code.GetGraphic(3);
+            }
+            else if (NameText1.Text.Equals("Full Name") || PurposeOfVisit.Text.Equals("Purpose of Visit"))
+            {
+                MessageBox.Show("Please fill up empty form/s.");
+            }
         }
     }
 }
