@@ -15,6 +15,7 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -27,7 +28,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -349,11 +349,21 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountsDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Createnewaccount.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Createnewaccount.Designer.cs">
       <DependentUpon>Createnewaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="ExistingAcccount.cs">
       <SubType>Form</SubType>
@@ -424,6 +434,28 @@
     <EmbeddedResource Include="VisitorsAccount.resx">
       <DependentUpon>VisitorsAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="AccountsDataSet.xsc">
+      <DependentUpon>AccountsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AccountsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AccountsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AccountsDataSet.xss">
+      <DependentUpon>AccountsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -445,11 +477,18 @@
     <None Include="Resources\recent.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database1.mdf">
+    <Content Include="Accounts.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Database1_log.ldf">
+    <Content Include="Accounts_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Accounts.mdf</DependentUpon>
+    </Content>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
   </ItemGroup>

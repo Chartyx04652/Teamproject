@@ -13,14 +13,18 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Data.SqlClient;
 using System.Windows.Forms.VisualStyles;
 using System.Windows.Controls;
+using System.Configuration;
 
 namespace QrSystem1
 {
     public partial class HomeownerAccount : Form
     {
+        String connectionString;
+        SqlConnection connection;
         public HomeownerAccount()
         {
             InitializeComponent();
+            connectionString = ConfigurationManager.ConnectionStrings["QrSystem1.Properties.Settings.Database1ConnectionString"].ConnectionString;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -119,7 +123,15 @@ namespace QrSystem1
             }
         }
 
-        
+        private void PopulateHOAccount()
+        {
+            using (connection = new SqlConnection(connectionString))
+            using (SqlDataAdapter adapter = new SqlDataAdapter("select * from HO_Account", connection))
+            { 
+                
+            }
+
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -130,8 +142,7 @@ namespace QrSystem1
             Convert.ToString(result);
             Convert.ToString(result1);
             Convert.ToString(result2);
-            try
-            {
+            
 
                 if (NameText.Text.Equals("Full Name") || textBox1.Text.Equals("Blk No.") || textBox2.Text.Equals("Lot No.") || ContactText.Text.Equals("Contact No."))
                 {
@@ -160,31 +171,34 @@ namespace QrSystem1
                     var code = new QRCoder.QRCode(Mydata5);
                     pictureBox1.Image = code.GetGraphic(3);
 
-                    string executable = System.Reflection.Assembly.GetExecutingAssembly().Location;
-                    string path = (System.IO.Path.GetDirectoryName(executable));
+                String query = "insert into HO_Account(fullName,blockNo,lotNo,contactNo)values('"+NameText.Text+"','"+textBox1.Text+"','"+textBox2.Text+"','"+ContactText.Text+"')";
+                using (connection = new SqlConnection(connectionString))
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+                }
+    
+                    //string executable = System.Reflection.Assembly.GetExecutingAssembly().Location;
+                    //string path = (System.IO.Path.GetDirectoryName(executable));
+                    //AppDomain.CurrentDomain.SetData("DataDirectory", path);
+                    //SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"|DataDirectory|\\Database1.mdf;Integrated Security=True");
+                    //conn.Open();
 
-                    AppDomain.CurrentDomain.SetData("DataDirectory", path);
-                    SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"|DataDirectory|\\Database1.mdf;Integrated Security=True");
-                    conn.Open();
-
-                    if (conn.State == System.Data.ConnectionState.Open)
-                    {
-                        string q = "insert into HO_Account(ID, fullName, blockNo, lotNo, contactNo) values ('" + "','" +NameText.Text.ToString() + "','" + textBox1.Text.ToString() + "','" + textBox2.Text.ToString() + "','" + ContactText.Text.ToString()+ "')";
-                        SqlCommand cmd = new SqlCommand(q,conn);
-                        cmd.ExecuteNonQuery();
-                    }
+                    //if (conn.State == System.Data.ConnectionState.Open)
+                    //{
+                    //    string q = "insert into HO_Account(fullName, blockNo, lotNo, contactNo) values ('" + "','" +NameText.Text.ToString() + "','" + Convert.ToInt32(textBox1.Text) + "','" + Convert.ToInt32(textBox2.Text) + "','" + ContactText.Text.ToString()+ "')";
+                    //    SqlCommand cmd = new SqlCommand(q,conn);
+                    //    cmd.ExecuteNonQuery();
+                    //}
 
                 }
-            }
-            catch (InvalidCastException)
-            {
-                MessageBox.Show("Invalid Input");
-            }
+            
+            
 
         }
 
-        
 
-        
     }
 }
