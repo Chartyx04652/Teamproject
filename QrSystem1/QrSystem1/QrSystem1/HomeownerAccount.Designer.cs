@@ -35,19 +35,19 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ContactText = new System.Windows.Forms.TextBox();
-            this.NameText = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.NameText = new System.Windows.Forms.TextBox();
+            this.ContactText = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -129,91 +129,16 @@
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
             // 
-            // panel2
+            // label15
             // 
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.ContactText);
-            this.panel2.Controls.Add(this.NameText);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(300, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(450, 530);
-            this.panel2.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox2.Location = new System.Drawing.Point(42, 305);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(135, 27);
-            this.textBox2.TabIndex = 25;
-            this.textBox2.Text = "Lot No.";
-            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
-            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave_1);
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 3;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.button2.Location = new System.Drawing.Point(248, 368);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(127, 49);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "Generate";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(248, 239);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(126, 105);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 23;
-            this.pictureBox1.TabStop = false;
-            // 
-            // ContactText
-            // 
-            this.ContactText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ContactText.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ContactText.Location = new System.Drawing.Point(42, 338);
-            this.ContactText.Name = "ContactText";
-            this.ContactText.Size = new System.Drawing.Size(135, 27);
-            this.ContactText.TabIndex = 22;
-            this.ContactText.Text = "Contact No.";
-            this.ContactText.Enter += new System.EventHandler(this.ContactText_Enter);
-            this.ContactText.Leave += new System.EventHandler(this.ContactText_Leave);
-            // 
-            // NameText
-            // 
-            this.NameText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameText.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.NameText.Location = new System.Drawing.Point(42, 239);
-            this.NameText.Name = "NameText";
-            this.NameText.Size = new System.Drawing.Size(135, 27);
-            this.NameText.TabIndex = 21;
-            this.NameText.Text = "Full Name";
-            this.NameText.Enter += new System.EventHandler(this.NameText_Enter);
-            this.NameText.Leave += new System.EventHandler(this.NameText_Leave);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox1.Location = new System.Drawing.Point(42, 272);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(135, 27);
-            this.textBox1.TabIndex = 20;
-            this.textBox1.Text = "Blk No.";
-            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
-            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.label15.Location = new System.Drawing.Point(38, 135);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(312, 24);
+            this.label15.TabIndex = 18;
+            this.label15.Text = "Homeowner Create Account";
             // 
             // button1
             // 
@@ -232,16 +157,91 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // label15
+            // textBox1
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.label15.Location = new System.Drawing.Point(38, 135);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(312, 24);
-            this.label15.TabIndex = 18;
-            this.label15.Text = "Homeowner Create Account";
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox1.Location = new System.Drawing.Point(42, 272);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(135, 27);
+            this.textBox1.TabIndex = 20;
+            this.textBox1.Text = "Blk No.";
+            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
+            // 
+            // NameText
+            // 
+            this.NameText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameText.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.NameText.Location = new System.Drawing.Point(42, 239);
+            this.NameText.Name = "NameText";
+            this.NameText.Size = new System.Drawing.Size(135, 27);
+            this.NameText.TabIndex = 21;
+            this.NameText.Text = "Full Name";
+            this.NameText.Enter += new System.EventHandler(this.NameText_Enter);
+            this.NameText.Leave += new System.EventHandler(this.NameText_Leave);
+            // 
+            // ContactText
+            // 
+            this.ContactText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ContactText.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.ContactText.Location = new System.Drawing.Point(42, 338);
+            this.ContactText.Name = "ContactText";
+            this.ContactText.Size = new System.Drawing.Size(135, 27);
+            this.ContactText.TabIndex = 22;
+            this.ContactText.Text = "Contact No.";
+            this.ContactText.Enter += new System.EventHandler(this.ContactText_Enter);
+            this.ContactText.Leave += new System.EventHandler(this.ContactText_Leave);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(248, 239);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(126, 105);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 3;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.button2.Location = new System.Drawing.Point(248, 368);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(127, 49);
+            this.button2.TabIndex = 24;
+            this.button2.Text = "Generate";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox2.Location = new System.Drawing.Point(42, 305);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(135, 27);
+            this.textBox2.TabIndex = 25;
+            this.textBox2.Text = "Lot No.";
+            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave_1);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.ContactText);
+            this.panel2.Controls.Add(this.NameText);
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.label15);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(300, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(450, 530);
+            this.panel2.TabIndex = 1;
             // 
             // HomeownerAccount
             // 
@@ -258,9 +258,9 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -269,7 +269,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
@@ -280,8 +279,9 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox NameText;
         private System.Windows.Forms.TextBox ContactText;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Panel panel2;
     }
 }

@@ -16,7 +16,12 @@ namespace QrSystem1
         {
             InitializeComponent();
         }
+        private void HomeownersHistory_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'userAccountDataSet.homeownerAccount' table. You can move, or remove it, as needed.
+            this.homeownerAccountTableAdapter.Fill(this.userAccountDataSet.homeownerAccount);
 
+        }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -75,5 +80,7 @@ namespace QrSystem1
             ExistingAcccount frm = new ExistingAcccount();
             frm.Show();
         }
+
+        
     }
 }

@@ -13,14 +13,34 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Data.SqlClient;
 using System.Windows.Forms.VisualStyles;
 using System.Windows.Controls;
+using System.Configuration;
 
 namespace QrSystem1
 {
     public partial class HomeownerAccount : Form
     {
+        String connectionString;
+        SqlConnection connection;
         public HomeownerAccount()
         {
             InitializeComponent();
+            connectionString = ConfigurationManager.ConnectionStrings["QrSystem1.Properties.Settings.UserAccountConnectionString"].ConnectionString;
+        }
+        private void HomeownerAccount_Load_1(object sender, EventArgs e)
+        {
+            PopulatehomeownerAccount();
+        }
+
+        private void PopulatehomeownerAccount()
+        {
+            using (connection = new SqlConnection(connectionString))
+            using (SqlCommand com = new SqlCommand("select * from homeownerAccount", connection))
+
+            {
+                connection.Open();
+                SqlDataReader reader = com.ExecuteReader();
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -32,7 +52,7 @@ namespace QrSystem1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            this.Close(); 
+            this.Close();
             Createnewaccount frm = new Createnewaccount();
             frm.Show();
         }
@@ -97,7 +117,7 @@ namespace QrSystem1
             }
         }
 
-        
+
 
         private void ContactText_Enter(object sender, EventArgs e)
         {
@@ -119,72 +139,102 @@ namespace QrSystem1
             }
         }
 
-        
-
         private void button2_Click(object sender, EventArgs e)
         {
             int number;
             bool result = Int32.TryParse(textBox1.Text, out number);
             bool result1 = Int32.TryParse(textBox2.Text, out number);
             bool result2 = Int32.TryParse(ContactText.Text, out number);
-            Convert.ToString(result);
-            Convert.ToString(result1);
-            Convert.ToString(result2);
-            try
+            
+            
+
+            if (NameText.Text.Equals("Full Name") || textBox1.Text.Equals("Blk No.") || textBox2.Text.Equals("Lot No.") || ContactText.Text.Equals("Contact No."))
             {
-
-                if (NameText.Text.Equals("Full Name") || textBox1.Text.Equals("Blk No.") || textBox2.Text.Equals("Lot No.") || ContactText.Text.Equals("Contact No."))
-                {
-                    MessageBox.Show("Please fill up empty form/s.");
-                }
-                else if (ContactText.Text.Length < 11)
-                {
-                    MessageBox.Show("Contact no. must be atleast 11 digits long.");
-                }
-                else if (result.Equals("False")|| result1.Equals("False") || result2.Equals("False"))
-                {
-                    MessageBox.Show("Invalid Input");
-                }
-
-
-                else if (!(NameText.Text.Equals("Full Name") || textBox1.Text.Equals("Blk No.") || textBox2.Text.Equals("Lot No.") || ContactText.Text.Equals("Contact No.")))
-                {
-                    QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
-                    var Mydata = NameText.Text;
-                    var Mydata1 = textBox1.Text; //block no
-                    var Mydata2 = textBox2.Text; //lot no
-                    var Mydata3 = ContactText.Text;
-
-                    var Mydata4 = Mydata + "," + Mydata1 + "," + Mydata2 + "," + Mydata3;
-                    var Mydata5 = QG.CreateQrCode(Mydata4, QRCoder.QRCodeGenerator.ECCLevel.H);
-                    var code = new QRCoder.QRCode(Mydata5);
-                    pictureBox1.Image = code.GetGraphic(3);
-
-                    string executable = System.Reflection.Assembly.GetExecutingAssembly().Location;
-                    string path = (System.IO.Path.GetDirectoryName(executable));
-
-                    AppDomain.CurrentDomain.SetData("DataDirectory", path);
-                    SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"|DataDirectory|\\Database1.mdf;Integrated Security=True");
-                    conn.Open();
-
-                    if (conn.State == System.Data.ConnectionState.Open)
-                    {
-                        string q = "insert into HO_Account(ID, fullName, blockNo, lotNo, contactNo) values ('" + "','" +NameText.Text.ToString() + "','" + textBox1.Text.ToString() + "','" + textBox2.Text.ToString() + "','" + ContactText.Text.ToString()+ "')";
-                        SqlCommand cmd = new SqlCommand(q,conn);
-                        cmd.ExecuteNonQuery();
-                    }
-
-                }
+                MessageBox.Show("Please fill up empty form/s.");
             }
-            catch (InvalidCastException)
+            
+            else if (result == false || result1 == false || result2 == false)
             {
                 MessageBox.Show("Invalid Input");
             }
 
+            else if (ContactText.Text.Length < 11)
+            {
+                MessageBox.Show("Contact no. must be atleast 11 digits long.");
+            }
+
+
+            else if (!(NameText.Text.Equals("Full Name") || textBox1.Text.Equals("Blk No.") || textBox2.Text.Equals("Lot No.") || ContactText.Text.Equals("Contact No.")))
+            {
+                if (MessageBox.Show("Would you like to save this account?", "Save account", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    try
+                    {
+                        String query = "insert into homeownerAccount (Name, blockNo, lotNo, contactNo) values ('" + NameText.Text + "', '" + textBox1.Text + "', '" + textBox2.Text + "', '" + ContactText.Text + "')";
+
+                        using (connection = new SqlConnection(connectionString))
+                        using (SqlCommand cmd = new SqlCommand(query, connection))
+
+
+                        {
+                            connection.Open();
+
+                            QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
+                            var Mydata = NameText.Text;
+                            var Mydata1 = textBox1.Text; //block no
+                            var Mydata2 = textBox2.Text; //lot no
+                            var Mydata3 = ContactText.Text;
+
+                            var Mydata4 = Mydata + "," + Mydata1 + "," + Mydata2 + "," + Mydata3;
+                            var Mydata5 = QG.CreateQrCode(Mydata4, QRCoder.QRCodeGenerator.ECCLevel.H);
+                            var code = new QRCoder.QRCode(Mydata5);
+                            pictureBox1.Image = code.GetGraphic(3);
+
+                            cmd.ExecuteNonQuery();
+                            MessageBox.Show("Account succefully created.");
+
+                        }
+                        PopulatehomeownerAccount();
+                    }
+                    catch (SqlException r)
+                    {
+                        switch (r.Number)
+                        {
+                            case 2627:
+                                MessageBox.Show("Duplicate Name");
+                                break;
+                            case 208:
+                                MessageBox.Show("Bad Obj");
+                                break;
+                            default:
+
+                                MessageBox.Show("" + r);
+                                break;
+                        }
+                    }
+
+
+
+                    //string executable = System.Reflection.Assembly.GetExecutingAssembly().Location;
+                    //string path = (System.IO.Path.GetDirectoryName(executable));
+                    //AppDomain.CurrentDomain.SetData("DataDirectory", path);
+                    //SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"|DataDirectory|\\Database1.mdf;Integrated Security=True");
+                    //conn.Open();
+
+                    //if (conn.State == System.Data.ConnectionState.Open)
+                    //{
+                    //    string q = "insert into HO_Account(fullName, blockNo, lotNo, contactNo) values ('" + "','" +NameText.Text.ToString() + "','" + Convert.ToInt32(textBox1.Text) + "','" + Convert.ToInt32(textBox2.Text) + "','" + ContactText.Text.ToString()+ "')";
+                    //    SqlCommand cmd = new SqlCommand(q,conn);
+                    //    cmd.ExecuteNonQuery();
+                    //}
+
+                }
+
+
+
+            }
+
+
         }
-
-        
-
-        
     }
 }
