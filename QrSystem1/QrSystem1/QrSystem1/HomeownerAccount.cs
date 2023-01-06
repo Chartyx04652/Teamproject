@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Data.SqlClient;
+using System.Windows.Forms.VisualStyles;
+using System.Windows.Controls;
 
 namespace QrSystem1
 {
@@ -117,59 +119,72 @@ namespace QrSystem1
             }
         }
 
-        public string conString = "Data Source=DESKTOP-RVS1I23\\SQLEXPRESS;Initial Catalog=QrSystem;Integrated Security=True";
+        
+
         private void button2_Click(object sender, EventArgs e)
         {
-            if (!(NameText.Text.Equals("Full Name") || textBox1.Text.Equals("Blk No.") || textBox2.Text.Equals("Lot No.") || ContactText.Text.Equals("Contact No.") || textBox3.Text.Equals("ID")))
+            int number;
+            bool result = Int32.TryParse(textBox1.Text, out number);
+            bool result1 = Int32.TryParse(textBox2.Text, out number);
+            bool result2 = Int32.TryParse(ContactText.Text, out number);
+            Convert.ToString(result);
+            Convert.ToString(result1);
+            Convert.ToString(result2);
+            try
             {
-                QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
-                var Mydata = NameText.Text;
-                var Mydata1 = textBox1.Text;
-                var Mydata2 = textBox2.Text;
-                var Mydata3 = ContactText.Text;
-                var Mydata4 = textBox3.Text;
-                var Mydata5 = Mydata4 + "," + Mydata + "," + Mydata1 + "," + Mydata2 + "," + Mydata3;
-                var Mydata6 = QG.CreateQrCode(Mydata5, QRCoder.QRCodeGenerator.ECCLevel.H);
-                var code = new QRCoder.QRCode(Mydata6);
-                pictureBox1.Image = code.GetGraphic(3);
+
+                if (NameText.Text.Equals("Full Name") || textBox1.Text.Equals("Blk No.") || textBox2.Text.Equals("Lot No.") || ContactText.Text.Equals("Contact No."))
+                {
+                    MessageBox.Show("Please fill up empty form/s.");
+                }
+                else if (ContactText.Text.Length < 11)
+                {
+                    MessageBox.Show("Contact no. must be atleast 11 digits long.");
+                }
+                else if (result.Equals("False")|| result1.Equals("False") || result2.Equals("False"))
+                {
+                    MessageBox.Show("Invalid Input");
+                }
+
+
+                else if (!(NameText.Text.Equals("Full Name") || textBox1.Text.Equals("Blk No.") || textBox2.Text.Equals("Lot No.") || ContactText.Text.Equals("Contact No.")))
+                {
+                    QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
+                    var Mydata = NameText.Text;
+                    var Mydata1 = textBox1.Text; //block no
+                    var Mydata2 = textBox2.Text; //lot no
+                    var Mydata3 = ContactText.Text;
+
+                    var Mydata4 = Mydata + "," + Mydata1 + "," + Mydata2 + "," + Mydata3;
+                    var Mydata5 = QG.CreateQrCode(Mydata4, QRCoder.QRCodeGenerator.ECCLevel.H);
+                    var code = new QRCoder.QRCode(Mydata5);
+                    pictureBox1.Image = code.GetGraphic(3);
+
+                    string executable = System.Reflection.Assembly.GetExecutingAssembly().Location;
+                    string path = (System.IO.Path.GetDirectoryName(executable));
+
+                    AppDomain.CurrentDomain.SetData("DataDirectory", path);
+                    SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"|DataDirectory|\\Database1.mdf;Integrated Security=True");
+                    conn.Open();
+
+                    if (conn.State == System.Data.ConnectionState.Open)
+                    {
+                        string q = "insert into HO_Account(ID, fullName, blockNo, lotNo, contactNo) values ('" + "','" +NameText.Text.ToString() + "','" + textBox1.Text.ToString() + "','" + textBox2.Text.ToString() + "','" + ContactText.Text.ToString()+ "')";
+                        SqlCommand cmd = new SqlCommand(q,conn);
+                        cmd.ExecuteNonQuery();
+                    }
+
+                }
             }
-            else if (NameText.Text.Equals("Full Name") || textBox1.Text.Equals("Blk No.") || textBox2.Text.Equals("Lot No.") || ContactText.Text.Equals("Contact No.") || textBox3.Text.Equals("ID"))
+            catch (InvalidCastException)
             {
-                MessageBox.Show("Please fill up empty form/s.");
+                MessageBox.Show("Invalid Input");
             }
 
-            SqlConnection con = new SqlConnection(conString);
-            con.Open();
-            if (con.State == System.Data.ConnectionState.Open)
-            {
-                string q = "insert into HO_Account(ID, Name, Block_Number, Lot_Number, Contact_Number) values('" + textBox3.Text.ToString() + "','" + NameText.Text.ToString() + "','" + textBox1.Text.ToString() + "','" + textBox2.Text.ToString() + "','" + ContactText.Text.ToString() + "')";
-                SqlCommand cmd = new SqlCommand(q, con);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Account Added");
-            }
         }
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-        private void textBox3_Enter(object sender, EventArgs e)
-        {
-            if (ContactText.Text == "ID")
-            {
-                ContactText.Text = "";
+        
 
-                ContactText.ForeColor = Color.Black;
-            }
-        }
-
-        private void textBox3_Leave(object sender, EventArgs e)
-        {
-            if (textBox1.Text.Trim().Length == 0)
-            {
-                textBox1.Text = "ID";
-
-                textBox1.ForeColor = Color.Silver;
-            }
-        }
+        
     }
 }
