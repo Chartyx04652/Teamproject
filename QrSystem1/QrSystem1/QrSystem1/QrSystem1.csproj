@@ -349,21 +349,16 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountsDataSet.Designer.cs">
+    <Compile Include="accountDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AccountsDataSet.xsd</DependentUpon>
+      <DependentUpon>accountDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Createnewaccount.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Createnewaccount.Designer.cs">
       <DependentUpon>Createnewaccount.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Database1DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="ExistingAcccount.cs">
       <SubType>Form</SubType>
@@ -434,27 +429,16 @@
     <EmbeddedResource Include="VisitorsAccount.resx">
       <DependentUpon>VisitorsAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="AccountsDataSet.xsc">
-      <DependentUpon>AccountsDataSet.xsd</DependentUpon>
+    <None Include="accountDataSet.xsc">
+      <DependentUpon>accountDataSet.xsd</DependentUpon>
     </None>
-    <None Include="AccountsDataSet.xsd">
+    <None Include="accountDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>AccountsDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>accountDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="AccountsDataSet.xss">
-      <DependentUpon>AccountsDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Database1DataSet.xsc">
-      <DependentUpon>Database1DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Database1DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Database1DataSet.xss">
-      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    <None Include="accountDataSet.xss">
+      <DependentUpon>accountDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -477,22 +461,6 @@
     <None Include="Resources\recent.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Accounts.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Accounts_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Accounts.mdf</DependentUpon>
-    </Content>
-    <Content Include="Database1.mdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Database1_log.ldf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <DependentUpon>Database1.mdf</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
@@ -503,6 +471,22 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="account.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="account_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>account.mdf</DependentUpon>
+    </Content>
+    <Content Include="historydatabase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="historydatabase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>historydatabase.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.6.6.4\build\Fody.targets" Condition="Exists('..\packages\Fody.6.6.4\build\Fody.targets')" />

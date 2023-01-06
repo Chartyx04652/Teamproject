@@ -108,7 +108,7 @@ C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem
 C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.Fody.CopyLocal.cache
 C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.Fody.RuntimeCopyLocal.cache
 C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.CopyComplete
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\Database1.mdf
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\Database1_log.ldf
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\Accounts.mdf
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\Accounts_log.ldf
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\account.mdf
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\account_log.ldf
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\historydatabase.mdf
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\historydatabase_log.ldf
