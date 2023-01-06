@@ -167,25 +167,40 @@ namespace QrSystem1
 
                 else if (!(NameText.Text.Equals("Full Name") || textBox1.Text.Equals("Blk No.") || textBox2.Text.Equals("Lot No.") || ContactText.Text.Equals("Contact No.")))
                 {
-                    QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
-                    var Mydata = NameText.Text;
-                    var Mydata1 = textBox1.Text; //block no
-                    var Mydata2 = textBox2.Text; //lot no
-                    var Mydata3 = ContactText.Text;
-
-                    var Mydata4 = Mydata + "," + Mydata1 + "," + Mydata2 + "," + Mydata3;
-                    var Mydata5 = QG.CreateQrCode(Mydata4, QRCoder.QRCodeGenerator.ECCLevel.H);
-                    var code = new QRCoder.QRCode(Mydata5);
-                    pictureBox1.Image = code.GetGraphic(3);
+                    
 
                 String query = "insert into homeownerAccount (Name, blockNo, lotNo, contactNo) values ('" + NameText.Text + "', '"+ textBox1.Text + "', '"+ textBox2.Text + "', '"+ ContactText.Text + "')";
+                String query1 = "select * from homeownerAccount where Name = Name";
                 using (connection = new SqlConnection(connectionString))
                 using (SqlCommand cmd = new SqlCommand(query, connection))
+                using (SqlCommand cmd1 = new SqlCommand(query1, connection))
+
                 {
                     connection.Open();
 
 
-                    cmd.ExecuteNonQuery();
+                    
+                    SqlDataReader dataReader = cmd1.ExecuteReader();
+                    if (dataReader.Read())
+                    {
+                        MessageBox.Show("This account already exists.");
+                        dataReader.Close();
+                    }
+                    else
+                    {
+                        QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
+                        var Mydata = NameText.Text;
+                        var Mydata1 = textBox1.Text; //block no
+                        var Mydata2 = textBox2.Text; //lot no
+                        var Mydata3 = ContactText.Text;
+
+                        var Mydata4 = Mydata + "," + Mydata1 + "," + Mydata2 + "," + Mydata3;
+                        var Mydata5 = QG.CreateQrCode(Mydata4, QRCoder.QRCodeGenerator.ECCLevel.H);
+                        var code = new QRCoder.QRCode(Mydata5);
+                        pictureBox1.Image = code.GetGraphic(3);
+
+                        cmd.ExecuteNonQuery();
+                    }
                     
                 }
                 PopulatehomeownerAccount();
