@@ -24,7 +24,7 @@ namespace QrSystem1
         public HomeownerAccount()
         {
             InitializeComponent();
-            connectionString = ConfigurationManager.ConnectionStrings["QrSystem1.Properties.Settings.accountConnectionString"].ConnectionString;
+            connectionString = ConfigurationManager.ConnectionStrings["QrSystem1.Properties.Settings.UserAccountConnectionString"].ConnectionString;
         }
         private void HomeownerAccount_Load_1(object sender, EventArgs e)
         {
@@ -178,20 +178,17 @@ namespace QrSystem1
                     var code = new QRCoder.QRCode(Mydata5);
                     pictureBox1.Image = code.GetGraphic(3);
 
-                String query = "insert into homeownerAccount values(@Name, @blockNo, @lotNo, @contactNo)";
+                String query = "insert into homeownerAccount (Name, blockNo, lotNo, contactNo) values ('" + NameText.Text + "', '"+ textBox1.Text + "', '"+ textBox2.Text + "', '"+ ContactText.Text + "')";
                 using (connection = new SqlConnection(connectionString))
                 using (SqlCommand cmd = new SqlCommand(query, connection))
                 {
                     connection.Open();
 
-                    cmd.Parameters.AddWithValue("@Name", NameText.Text);
-                    cmd.Parameters.AddWithValue("@blockNo", textBox1.Text);
-                    cmd.Parameters.AddWithValue("@lotNo", textBox2.Text);
-                    cmd.Parameters.AddWithValue("@contactNo", ContactText.Text);
 
-                    cmd.ExecuteScalar();
+                    cmd.ExecuteNonQuery();
                     
                 }
+                PopulatehomeownerAccount();
     
                     //string executable = System.Reflection.Assembly.GetExecutingAssembly().Location;
                     //string path = (System.IO.Path.GetDirectoryName(executable));

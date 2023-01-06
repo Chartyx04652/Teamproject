@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Teamproject\\Teamproject\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj": {}
+    "C:\\Users\\Adachi Tenka\\Desktop\\teamproj\\Teamproject\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj": {}
   },
   "projects": {
-    "E:\\Teamproject\\Teamproject\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj": {
+    "C:\\Users\\Adachi Tenka\\Desktop\\teamproj\\Teamproject\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Teamproject\\Teamproject\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj",
+        "projectUniqueName": "C:\\Users\\Adachi Tenka\\Desktop\\teamproj\\Teamproject\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj",
         "projectName": "QRCode Demo",
-        "projectPath": "E:\\Teamproject\\Teamproject\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj",
-        "packagesPath": "C:\\Users\\Kodi\\.nuget\\packages\\",
-        "outputPath": "E:\\Teamproject\\Teamproject\\QRCode Demo\\QRCode Demo\\obj\\",
+        "projectPath": "C:\\Users\\Adachi Tenka\\Desktop\\teamproj\\Teamproject\\QRCode Demo\\QRCode Demo\\QRCode Demo.csproj",
+        "packagesPath": "C:\\Users\\Adachi Tenka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Adachi Tenka\\Desktop\\teamproj\\Teamproject\\QRCode Demo\\QRCode Demo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kodi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Adachi Tenka\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,7 +72,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

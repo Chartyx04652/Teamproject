@@ -15,6 +15,7 @@ namespace QRCode_Demo
 {
     public partial class Form2 : Form
     {
+        Bitmap ah;
         public Form2()
         {
             InitializeComponent();
@@ -41,12 +42,7 @@ namespace QRCode_Demo
         private void CaptureDevice_NewFrame(object sender, AForge.Video.NewFrameEventArgs eventArgs)
         {
             Bitmap bitmap = (Bitmap)eventArgs.Frame.Clone();
-            BarcodeReader barcode = new BarcodeReader();
-            var result = barcode.Decode(bitmap);
-            if (result != null) 
-            {
-                String output = result.ToString();
-            }
+            ah = bitmap;
             pictureBox.Image = bitmap;
         }
 
@@ -58,8 +54,16 @@ namespace QRCode_Demo
             }
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BarcodeReader barcode = new BarcodeReader();
 
-        
+            var result = barcode.Decode(ah);
+            if (result != null)
+            {
+                String output = result.ToString();
+                MessageBox.Show(output);
+            }
+        }
     }
 }

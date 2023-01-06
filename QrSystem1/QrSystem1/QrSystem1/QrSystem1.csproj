@@ -349,11 +349,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="accountDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>accountDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Createnewaccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -392,6 +387,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserAccountDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserAccountDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="VisitorsAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -429,17 +429,6 @@
     <EmbeddedResource Include="VisitorsAccount.resx">
       <DependentUpon>VisitorsAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="accountDataSet.xsc">
-      <DependentUpon>accountDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="accountDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>accountDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="accountDataSet.xss">
-      <DependentUpon>accountDataSet.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -450,6 +439,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="UserAccountDataSet.xsc">
+      <DependentUpon>UserAccountDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UserAccountDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserAccountDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UserAccountDataSet.xss">
+      <DependentUpon>UserAccountDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -473,19 +473,19 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="account.mdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="account_log.ldf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <DependentUpon>account.mdf</DependentUpon>
-    </Content>
-    <Content Include="historydatabase.mdf">
+    <Content Include="History.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="historydatabase_log.ldf">
+    <Content Include="History_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>historydatabase.mdf</DependentUpon>
+      <DependentUpon>History.mdf</DependentUpon>
+    </Content>
+    <Content Include="UserAccount.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UserAccount_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>UserAccount.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

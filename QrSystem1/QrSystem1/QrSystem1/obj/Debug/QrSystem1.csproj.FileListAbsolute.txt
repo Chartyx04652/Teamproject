@@ -218,7 +218,7 @@ E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Servic
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.ServiceModel.Primitives.pdb
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.ServiceModel.Security.pdb
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Web.Services.Description.pdb
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\account.mdf
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\account_log.ldf
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\historydatabase.mdf
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\historydatabase_log.ldf
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\History.mdf
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\History_log.ldf
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\UserAccount.mdf
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\UserAccount_log.ldf

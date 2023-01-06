@@ -1,2 +1,2 @@
-﻿Insert into HO_Account (Name, blockNo, lotNo, contactNo, Id) values ('Christian', '8', '48', '09123456789')
-Select * from HO_Account
+﻿insert into homeownerAccount (Name, blockNo, lotNo, contactNo) values ('Richard',10,23,09363631475)
+select * from homeownerAccount
