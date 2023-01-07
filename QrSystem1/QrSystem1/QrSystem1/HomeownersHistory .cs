@@ -24,5 +24,11 @@ namespace QrSystem1
             frm.Show();
         }
 
+        private void HomeownersHistory_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'userAccountDataSet1.homeownerAccount' table. You can move, or remove it, as needed.
+            this.homeownerAccountTableAdapter1.Fill(this.userAccountDataSet1.homeownerAccount);
+
+        }
     }
 }

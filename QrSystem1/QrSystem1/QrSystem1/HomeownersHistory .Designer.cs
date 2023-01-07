@@ -37,7 +37,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.homeownerAccountDataGridView = new System.Windows.Forms.DataGridView();
             this.homeownerAccountBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.userAccountDataSet = new QrSystem1.UserAccountDataSet();
             this.label15 = new System.Windows.Forms.Label();
@@ -45,17 +44,23 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.homeownerAccountTableAdapter = new QrSystem1.UserAccountDataSetTableAdapters.homeownerAccountTableAdapter();
             this.tableAdapterManager = new QrSystem1.UserAccountDataSetTableAdapters.TableAdapterManager();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.blockNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lotNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contactNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userAccountDataSet1 = new QrSystem1.UserAccountDataSet1();
+            this.homeownerAccountBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.homeownerAccountTableAdapter1 = new QrSystem1.UserAccountDataSet1TableAdapters.homeownerAccountTableAdapter();
+            this.tableAdapterManager1 = new QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager();
+            this.homeownerAccountDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -147,27 +152,8 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(200, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1111, 708);
+            this.panel2.Size = new System.Drawing.Size(1131, 708);
             this.panel2.TabIndex = 1;
-            // 
-            // homeownerAccountDataGridView
-            // 
-            this.homeownerAccountDataGridView.AllowUserToOrderColumns = true;
-            this.homeownerAccountDataGridView.AutoGenerateColumns = false;
-            this.homeownerAccountDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.homeownerAccountDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.homeownerAccountDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.homeownerAccountDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.nameDataGridViewTextBoxColumn,
-            this.blockNoDataGridViewTextBoxColumn,
-            this.lotNoDataGridViewTextBoxColumn,
-            this.contactNoDataGridViewTextBoxColumn});
-            this.homeownerAccountDataGridView.DataSource = this.homeownerAccountBindingSource;
-            this.homeownerAccountDataGridView.Location = new System.Drawing.Point(0, 33);
-            this.homeownerAccountDataGridView.Name = "homeownerAccountDataGridView";
-            this.homeownerAccountDataGridView.Size = new System.Drawing.Size(1111, 672);
-            this.homeownerAccountDataGridView.TabIndex = 8;
             // 
             // homeownerAccountBindingSource
             // 
@@ -198,7 +184,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.button1.Location = new System.Drawing.Point(1071, 3);
+            this.button1.Location = new System.Drawing.Point(1088, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(40, 33);
             this.button1.TabIndex = 6;
@@ -222,56 +208,96 @@
             this.tableAdapterManager.UpdateOrder = QrSystem1.UserAccountDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.visitorAccountTableAdapter = null;
             // 
-            // idDataGridViewTextBoxColumn
+            // userAccountDataSet1
             // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.userAccountDataSet1.DataSetName = "UserAccountDataSet1";
+            this.userAccountDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // nameDataGridViewTextBoxColumn
+            // homeownerAccountBindingSource1
             // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.homeownerAccountBindingSource1.DataMember = "homeownerAccount";
+            this.homeownerAccountBindingSource1.DataSource = this.userAccountDataSet1;
             // 
-            // blockNoDataGridViewTextBoxColumn
+            // homeownerAccountTableAdapter1
             // 
-            this.blockNoDataGridViewTextBoxColumn.DataPropertyName = "blockNo";
-            this.blockNoDataGridViewTextBoxColumn.HeaderText = "blockNo";
-            this.blockNoDataGridViewTextBoxColumn.Name = "blockNoDataGridViewTextBoxColumn";
+            this.homeownerAccountTableAdapter1.ClearBeforeFill = true;
             // 
-            // lotNoDataGridViewTextBoxColumn
+            // tableAdapterManager1
             // 
-            this.lotNoDataGridViewTextBoxColumn.DataPropertyName = "lotNo";
-            this.lotNoDataGridViewTextBoxColumn.HeaderText = "lotNo";
-            this.lotNoDataGridViewTextBoxColumn.Name = "lotNoDataGridViewTextBoxColumn";
+            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager1.chingchongTableAdapter = null;
+            this.tableAdapterManager1.homeownerAccountTableAdapter = this.homeownerAccountTableAdapter1;
+            this.tableAdapterManager1.homeownerTableAdapter = null;
+            this.tableAdapterManager1.UpdateOrder = QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager1.visitorAccountTableAdapter = null;
             // 
-            // contactNoDataGridViewTextBoxColumn
+            // homeownerAccountDataGridView
             // 
-            this.contactNoDataGridViewTextBoxColumn.DataPropertyName = "contactNo";
-            this.contactNoDataGridViewTextBoxColumn.HeaderText = "contactNo";
-            this.contactNoDataGridViewTextBoxColumn.Name = "contactNoDataGridViewTextBoxColumn";
+            this.homeownerAccountDataGridView.AutoGenerateColumns = false;
+            this.homeownerAccountDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.homeownerAccountDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.homeownerAccountDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.homeownerAccountDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn7});
+            this.homeownerAccountDataGridView.DataSource = this.homeownerAccountBindingSource1;
+            this.homeownerAccountDataGridView.Location = new System.Drawing.Point(0, 38);
+            this.homeownerAccountDataGridView.Name = "homeownerAccountDataGridView";
+            this.homeownerAccountDataGridView.Size = new System.Drawing.Size(1131, 667);
+            this.homeownerAccountDataGridView.TabIndex = 8;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "blockNo";
+            this.dataGridViewTextBoxColumn4.HeaderText = "blockNo";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "lotNo";
+            this.dataGridViewTextBoxColumn5.HeaderText = "lotNo";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "contactNo";
+            this.dataGridViewTextBoxColumn7.HeaderText = "contactNo";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
             // HomeownersHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1311, 708);
+            this.ClientSize = new System.Drawing.Size(1331, 708);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HomeownersHistory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HomeownersHistory";
+            this.Load += new System.EventHandler(this.HomeownersHistory_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -295,11 +321,14 @@
         private UserAccountDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private UserAccountDataSet1 userAccountDataSet1;
+        private System.Windows.Forms.BindingSource homeownerAccountBindingSource1;
+        private UserAccountDataSet1TableAdapters.homeownerAccountTableAdapter homeownerAccountTableAdapter1;
+        private UserAccountDataSet1TableAdapters.TableAdapterManager tableAdapterManager1;
         private System.Windows.Forms.DataGridView homeownerAccountDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn blockNoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lotNoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn contactNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
     }
 }
