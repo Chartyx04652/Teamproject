@@ -167,6 +167,7 @@
             this.textBox1.TabIndex = 20;
             this.textBox1.Text = "Blk No.";
             this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // NameText
@@ -179,6 +180,7 @@
             this.NameText.TabIndex = 21;
             this.NameText.Text = "Full Name";
             this.NameText.Enter += new System.EventHandler(this.NameText_Enter);
+            this.NameText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NameText_KeyPress);
             this.NameText.Leave += new System.EventHandler(this.NameText_Leave);
             // 
             // ContactText
@@ -191,6 +193,7 @@
             this.ContactText.TabIndex = 22;
             this.ContactText.Text = "Contact No.";
             this.ContactText.Enter += new System.EventHandler(this.ContactText_Enter);
+            this.ContactText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ContactText_KeyPress);
             this.ContactText.Leave += new System.EventHandler(this.ContactText_Leave);
             // 
             // pictureBox1
@@ -225,6 +228,7 @@
             this.textBox2.TabIndex = 25;
             this.textBox2.Text = "Lot No.";
             this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave_1);
             // 
             // panel2

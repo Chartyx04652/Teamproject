@@ -138,31 +138,44 @@ namespace QrSystem1
                 ContactText.ForeColor = Color.Silver;
             }
         }
+        private void NameText_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar)) return;
+            if (Char.IsControl(e.KeyChar)) return;
+            e.Handled = true;
+        }
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar)) return;
+            if (Char.IsControl(e.KeyChar)) return;
+            e.Handled = true;
+        }
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar)) return;
+            if (Char.IsControl(e.KeyChar)) return;
+            e.Handled = true;
+        }
+
+        private void ContactText_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar)) return;
+            if (Char.IsControl(e.KeyChar)) return;
+            e.Handled = true;
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int number;
-            bool result = Int32.TryParse(textBox1.Text, out number);
-            bool result1 = Int32.TryParse(textBox2.Text, out number);
-            bool result2 = Int32.TryParse(ContactText.Text, out number);
-            
-            
 
             if (NameText.Text.Equals("Full Name") || textBox1.Text.Equals("Blk No.") || textBox2.Text.Equals("Lot No.") || ContactText.Text.Equals("Contact No."))
             {
                 MessageBox.Show("Please fill up empty form/s.");
             }
-            
-            else if (result == false || result1 == false || result2 == false)
-            {
-                MessageBox.Show("Invalid Input");
-            }
-
+           
             else if (ContactText.Text.Length < 11)
             {
                 MessageBox.Show("Contact no. must be atleast 11 digits long.");
             }
-
 
             else if (!(NameText.Text.Equals("Full Name") || textBox1.Text.Equals("Blk No.") || textBox2.Text.Equals("Lot No.") || ContactText.Text.Equals("Contact No.")))
             {
@@ -213,28 +226,13 @@ namespace QrSystem1
                         }
                     }
 
-
-
-                    //string executable = System.Reflection.Assembly.GetExecutingAssembly().Location;
-                    //string path = (System.IO.Path.GetDirectoryName(executable));
-                    //AppDomain.CurrentDomain.SetData("DataDirectory", path);
-                    //SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"|DataDirectory|\\Database1.mdf;Integrated Security=True");
-                    //conn.Open();
-
-                    //if (conn.State == System.Data.ConnectionState.Open)
-                    //{
-                    //    string q = "insert into HO_Account(fullName, blockNo, lotNo, contactNo) values ('" + "','" +NameText.Text.ToString() + "','" + Convert.ToInt32(textBox1.Text) + "','" + Convert.ToInt32(textBox2.Text) + "','" + ContactText.Text.ToString()+ "')";
-                    //    SqlCommand cmd = new SqlCommand(q,conn);
-                    //    cmd.ExecuteNonQuery();
-                    //}
-
                 }
-
-
 
             }
 
 
         }
+
+        
     }
 }

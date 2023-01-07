@@ -8,14 +8,33 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace QrSystem1
 {
     public partial class VisitorsAccount : Form
     {
+        String connectionString;
+        SqlConnection connection;
         public VisitorsAccount()
         {
             InitializeComponent();
+            connectionString = ConfigurationManager.ConnectionStrings["QrSystem1.Properties.Settings.UserAccountConnectionString"].ConnectionString;
+        }
+        private void VisitoryAccount_Load(object sender, EventArgs e)
+        {
+            PopulatevisitorAccount();
+        }
+        private void PopulatevisitorAccount()
+        {
+            using (connection = new SqlConnection(connectionString))
+            using (SqlCommand com = new SqlCommand("select * from visitorAccount", connection))
+
+            {
+                connection.Open();
+                SqlDataReader reader = com.ExecuteReader();
+            }
+
         }
 
         private void NameText1_Enter(object sender, EventArgs e)
@@ -64,36 +83,72 @@ namespace QrSystem1
             Createnewaccount frm = new Createnewaccount();
             frm.Show();
         }
+        private void NameText1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar)) return;
+            if (Char.IsControl(e.KeyChar)) return;
+            e.Handled = true;
+        }
 
+        private void PurposeOfVisit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar)) return;
+            if (Char.IsControl(e.KeyChar)) return;
+            e.Handled = true;
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             if (!(NameText1.Text.Equals("Full Name") || PurposeOfVisit.Text.Equals("Purpose of Visit")))
             {
-                QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
-                var Mydata = NameText1.Text;
-                var Mydata1 = PurposeOfVisit.Text;
-                var Mydata2 = NameText1.Text + "," + PurposeOfVisit.Text;
-                var Mydata3 = QG.CreateQrCode(Mydata2, QRCoder.QRCodeGenerator.ECCLevel.H);
-                var code = new QRCoder.QRCode(Mydata3);
-                pictureimage1.Image = code.GetGraphic(3);
+                if (MessageBox.Show("Would you like to save this account?", "Save account", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    try
+                    {
+                        String query = "insert into visitorAccount (Name, purposeOfVisit) values ('" + NameText1.Text + "', '" + PurposeOfVisit.Text + "')";
+
+                        using (connection = new SqlConnection(connectionString))
+                        using (SqlCommand cmd = new SqlCommand(query, connection))
+
+
+                        {
+                            connection.Open();
+
+                            QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
+                            var Mydata = NameText1.Text;
+                            var Mydata1 = PurposeOfVisit.Text;
+                            var Mydata2 = NameText1.Text + "," + PurposeOfVisit.Text;
+                            var Mydata3 = QG.CreateQrCode(Mydata2, QRCoder.QRCodeGenerator.ECCLevel.H);
+                            var code = new QRCoder.QRCode(Mydata3);
+                            pictureimage1.Image = code.GetGraphic(3);
+
+                            cmd.ExecuteNonQuery();
+                            MessageBox.Show("Account succefully created.");
+
+                        }
+                        PopulatevisitorAccount();
+                    }
+                    catch (SqlException r)
+                    {
+                        switch (r.Number)
+                        {
+                            case 2627:
+                                MessageBox.Show("Duplicate Name");
+                                break;
+                            case 208:
+                                MessageBox.Show("Bad Obj");
+                                break;
+                            default:
+
+                                MessageBox.Show("" + r);
+                                break;
+                        }
+                    }
+                }
             }
             else if (NameText1.Text.Equals("Full Name") || PurposeOfVisit.Text.Equals("Purpose of Visit"))
             {
                 MessageBox.Show("Please fill up empty form/s.");
 
-                string executable = System.Reflection.Assembly.GetExecutingAssembly().Location;
-                string path = (System.IO.Path.GetDirectoryName(executable));
-
-                AppDomain.CurrentDomain.SetData("DataDirectory", path);
-                SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"|DataDirectory|\\Database1.mdf;Integrated Security=True");
-                conn.Open();
-
-                if (conn.State == System.Data.ConnectionState.Open)
-                {
-                    string q = "insert into Vis_Account(ID, fullName, Purpose_of_Visit) values ('" + "','" + NameText1.Text.ToString() + "','" + PurposeOfVisit.Text.ToString() + "')";
-                    SqlCommand cmd = new SqlCommand(q, conn);
-                    cmd.ExecuteNonQuery();
-                }
             }
         }
     }

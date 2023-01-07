@@ -36,12 +36,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureimage1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.PurposeOfVisit = new System.Windows.Forms.TextBox();
             this.NameText1 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.pictureimage1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
@@ -135,11 +135,33 @@
             this.panel2.Controls.Add(this.PurposeOfVisit);
             this.panel2.Controls.Add(this.NameText1);
             this.panel2.Controls.Add(this.label15);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(300, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(450, 530);
             this.panel2.TabIndex = 1;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 3;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.button2.Location = new System.Drawing.Point(248, 368);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(127, 49);
+            this.button2.TabIndex = 24;
+            this.button2.Text = "Generate";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pictureimage1
+            // 
+            this.pictureimage1.Location = new System.Drawing.Point(248, 239);
+            this.pictureimage1.Name = "pictureimage1";
+            this.pictureimage1.Size = new System.Drawing.Size(126, 105);
+            this.pictureimage1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureimage1.TabIndex = 23;
+            this.pictureimage1.TabStop = false;
             // 
             // button1
             // 
@@ -192,29 +214,6 @@
             this.label15.Size = new System.Drawing.Size(248, 24);
             this.label15.TabIndex = 9;
             this.label15.Text = "Visitors Create Account";
-            // 
-            // pictureimage1
-            // 
-            this.pictureimage1.Location = new System.Drawing.Point(248, 239);
-            this.pictureimage1.Name = "pictureimage1";
-            this.pictureimage1.Size = new System.Drawing.Size(126, 105);
-            this.pictureimage1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureimage1.TabIndex = 23;
-            this.pictureimage1.TabStop = false;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 3;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.button2.Location = new System.Drawing.Point(248, 368);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(127, 49);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "Generate";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // VisitorsAccount
             // 

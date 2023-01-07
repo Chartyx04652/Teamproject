@@ -46,22 +46,22 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.userAccountDataSet = new QrSystem1.UserAccountDataSet();
-            this.homeownerAccountBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.homeownerAccountTableAdapter = new QrSystem1.UserAccountDataSetTableAdapters.homeownerAccountTableAdapter();
-            this.tableAdapterManager = new QrSystem1.UserAccountDataSetTableAdapters.TableAdapterManager();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.blockNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lotNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contactNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.homeownerAccountBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.userAccountDataSet = new QrSystem1.UserAccountDataSet();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.homeownerAccountTableAdapter = new QrSystem1.UserAccountDataSetTableAdapters.homeownerAccountTableAdapter();
+            this.tableAdapterManager = new QrSystem1.UserAccountDataSetTableAdapters.TableAdapterManager();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -240,32 +240,6 @@
             this.Column3.HeaderText = "Contact no.";
             this.Column3.Name = "Column3";
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 7;
-            this.bunifuElipse1.TargetControl = this.dataGridView1;
-            // 
-            // userAccountDataSet
-            // 
-            this.userAccountDataSet.DataSetName = "UserAccountDataSet";
-            this.userAccountDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // homeownerAccountBindingSource
-            // 
-            this.homeownerAccountBindingSource.DataMember = "homeownerAccount";
-            this.homeownerAccountBindingSource.DataSource = this.userAccountDataSet;
-            // 
-            // homeownerAccountTableAdapter
-            // 
-            this.homeownerAccountTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.homeownerAccountTableAdapter = this.homeownerAccountTableAdapter;
-            this.tableAdapterManager.UpdateOrder = QrSystem1.UserAccountDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.visitorAccountTableAdapter = null;
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -297,6 +271,32 @@
             this.contactNoDataGridViewTextBoxColumn.HeaderText = "contactNo";
             this.contactNoDataGridViewTextBoxColumn.Name = "contactNoDataGridViewTextBoxColumn";
             // 
+            // homeownerAccountBindingSource
+            // 
+            this.homeownerAccountBindingSource.DataMember = "homeownerAccount";
+            this.homeownerAccountBindingSource.DataSource = this.userAccountDataSet;
+            // 
+            // userAccountDataSet
+            // 
+            this.userAccountDataSet.DataSetName = "UserAccountDataSet";
+            this.userAccountDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 7;
+            this.bunifuElipse1.TargetControl = this.dataGridView1;
+            // 
+            // homeownerAccountTableAdapter
+            // 
+            this.homeownerAccountTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.homeownerAccountTableAdapter = this.homeownerAccountTableAdapter;
+            this.tableAdapterManager.UpdateOrder = QrSystem1.UserAccountDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.visitorAccountTableAdapter = null;
+            // 
             // HomeownersHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -317,8 +317,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
