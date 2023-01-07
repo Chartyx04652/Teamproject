@@ -163,3 +163,8 @@ C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.csproj.CopyComplete
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.exe
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.pdb
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\UserAccount.mdf
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\UserAccount_log.ldf
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\History.mdf
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\History_log.ldf
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.VisitorsHistory.resources
