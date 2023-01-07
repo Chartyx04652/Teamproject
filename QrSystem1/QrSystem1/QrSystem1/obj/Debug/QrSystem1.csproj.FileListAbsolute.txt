@@ -168,3 +168,8 @@ E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\UserAccount_l
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\History.mdf
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\History_log.ldf
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.VisitorsHistory.resources
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.VisitorsHistory.resources
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\UserAccount.mdf
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\UserAccount_log.ldf
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\History.mdf
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\History_log.ldf

@@ -16,11 +16,6 @@ namespace QrSystem1
         {
             InitializeComponent();
         }
-       
-      
-
-
-       
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -29,6 +24,5 @@ namespace QrSystem1
             frm.Show();
         }
 
-        
     }
 }
