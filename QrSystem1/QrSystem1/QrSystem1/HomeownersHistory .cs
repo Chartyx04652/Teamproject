@@ -16,63 +16,11 @@ namespace QrSystem1
         {
             InitializeComponent();
         }
-        private void HomeownersHistory_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'userAccountDataSet.homeownerAccount' table. You can move, or remove it, as needed.
-            this.homeownerAccountTableAdapter.Fill(this.userAccountDataSet.homeownerAccount);
+       
+      
 
-        }
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
-
-        private void HomeownersHistory_SizeChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void HomeownersHistory_Shown(object sender, EventArgs e)
-        {
-            dataGridView1.Rows.Add(
-                new object[]
-                {
-                    "Vincent Willioamson",
-                    "3",
-                    "9",
-                    "09231231231",
-                    
-                }
-                );
-            dataGridView1.Rows.Add(
-                new object[]
-                {
-                    "Darren Dave Macrol",
-                    "232",
-                    "P. Buhangin",
-                    "012372321"
-                }
-                );
-            dataGridView1.Rows.Add(
-                new object[]
-                {
-                    "Vincent Willioamson",
-                    
-                    "Sta. Maria",
-                    "0123724123"
-                }
-                );
-            dataGridView1.Rows.Add(
-                new object[]
-                {
-                    "Vincent Willioamson",
-                   
-                    "Bocaue",
-                    "091231232"
-                }
-                );
-
-        }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
