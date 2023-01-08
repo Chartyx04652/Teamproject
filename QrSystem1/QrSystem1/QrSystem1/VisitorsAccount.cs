@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Drawing.Imaging;
 
 namespace QrSystem1
 {
@@ -126,6 +127,8 @@ namespace QrSystem1
 
                             cmd.ExecuteNonQuery();
                             MessageBox.Show("Account succefully created.");
+                            String path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                            pictureimage1.Image.Save(path + "\\" + DateTime.Now.Second.ToString() + DateTime.Now.Millisecond.ToString() + ".jpg", ImageFormat.Jpeg);
 
                         }
                         PopulatevisitorAccount();
