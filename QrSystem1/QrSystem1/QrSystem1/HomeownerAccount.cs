@@ -142,6 +142,8 @@ namespace QrSystem1
         {
             if (Char.IsLetter(e.KeyChar)) return;
             if (Char.IsControl(e.KeyChar)) return;
+            if (Char.IsWhiteSpace(e.KeyChar)) return;
+            if (e.KeyChar == '.') return;
             e.Handled = true;
         }
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -206,6 +208,8 @@ namespace QrSystem1
                             cmd.ExecuteNonQuery();
                             MessageBox.Show("Account succefully created.");
 
+                            String path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                            pictureBox1.Image.Save(path + "\\" + DateTime.Now.Second.ToString() + DateTime.Now.Millisecond.ToString() + ".jpg", ImageFormat.Jpeg);
                         }
                         PopulatehomeownerAccount();
                     }

@@ -87,6 +87,8 @@ namespace QrSystem1
         {
             if (Char.IsLetter(e.KeyChar)) return;
             if (Char.IsControl(e.KeyChar)) return;
+            if (Char.IsWhiteSpace(e.KeyChar)) return;
+            if (e.KeyChar == '.') return;
             e.Handled = true;
         }
 
@@ -94,6 +96,7 @@ namespace QrSystem1
         {
             if (Char.IsLetter(e.KeyChar)) return;
             if (Char.IsControl(e.KeyChar)) return;
+            if (Char.IsWhiteSpace(e.KeyChar)) return;
             e.Handled = true;
         }
         private void button2_Click(object sender, EventArgs e)
@@ -151,5 +154,7 @@ namespace QrSystem1
 
             }
         }
+
+
     }
 }

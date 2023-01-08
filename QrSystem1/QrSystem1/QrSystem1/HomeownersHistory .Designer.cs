@@ -37,30 +37,30 @@
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.homeownerAccountBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.userAccountDataSet = new QrSystem1.UserAccountDataSet();
-            this.label15 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.homeownerAccountTableAdapter = new QrSystem1.UserAccountDataSetTableAdapters.homeownerAccountTableAdapter();
-            this.tableAdapterManager = new QrSystem1.UserAccountDataSetTableAdapters.TableAdapterManager();
-            this.userAccountDataSet1 = new QrSystem1.UserAccountDataSet1();
-            this.homeownerAccountBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.homeownerAccountTableAdapter1 = new QrSystem1.UserAccountDataSet1TableAdapters.homeownerAccountTableAdapter();
-            this.tableAdapterManager1 = new QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager();
             this.homeownerAccountDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.homeownerAccountBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.userAccountDataSet1 = new QrSystem1.UserAccountDataSet1();
+            this.label15 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.homeownerAccountBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.userAccountDataSet = new QrSystem1.UserAccountDataSet();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.homeownerAccountTableAdapter = new QrSystem1.UserAccountDataSetTableAdapters.homeownerAccountTableAdapter();
+            this.tableAdapterManager = new QrSystem1.UserAccountDataSetTableAdapters.TableAdapterManager();
+            this.homeownerAccountTableAdapter1 = new QrSystem1.UserAccountDataSet1TableAdapters.homeownerAccountTableAdapter();
+            this.tableAdapterManager1 = new QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -155,15 +155,57 @@
             this.panel2.Size = new System.Drawing.Size(1131, 708);
             this.panel2.TabIndex = 1;
             // 
-            // homeownerAccountBindingSource
+            // homeownerAccountDataGridView
             // 
-            this.homeownerAccountBindingSource.DataMember = "homeownerAccount";
-            this.homeownerAccountBindingSource.DataSource = this.userAccountDataSet;
+            this.homeownerAccountDataGridView.AllowUserToOrderColumns = true;
+            this.homeownerAccountDataGridView.AutoGenerateColumns = false;
+            this.homeownerAccountDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.homeownerAccountDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.homeownerAccountDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.homeownerAccountDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn7});
+            this.homeownerAccountDataGridView.DataSource = this.homeownerAccountBindingSource1;
+            this.homeownerAccountDataGridView.Location = new System.Drawing.Point(0, 38);
+            this.homeownerAccountDataGridView.Name = "homeownerAccountDataGridView";
+            this.homeownerAccountDataGridView.Size = new System.Drawing.Size(1131, 667);
+            this.homeownerAccountDataGridView.TabIndex = 8;
             // 
-            // userAccountDataSet
+            // dataGridViewTextBoxColumn2
             // 
-            this.userAccountDataSet.DataSetName = "UserAccountDataSet";
-            this.userAccountDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "blockNo";
+            this.dataGridViewTextBoxColumn4.HeaderText = "blockNo";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "lotNo";
+            this.dataGridViewTextBoxColumn5.HeaderText = "lotNo";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "contactNo";
+            this.dataGridViewTextBoxColumn7.HeaderText = "contactNo";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // homeownerAccountBindingSource1
+            // 
+            this.homeownerAccountBindingSource1.DataMember = "homeownerAccount";
+            this.homeownerAccountBindingSource1.DataSource = this.userAccountDataSet1;
+            // 
+            // userAccountDataSet1
+            // 
+            this.userAccountDataSet1.DataSetName = "UserAccountDataSet1";
+            this.userAccountDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label15
             // 
@@ -192,6 +234,16 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // homeownerAccountBindingSource
+            // 
+            this.homeownerAccountBindingSource.DataMember = "homeownerAccount";
+            this.homeownerAccountBindingSource.DataSource = this.userAccountDataSet;
+            // 
+            // userAccountDataSet
+            // 
+            this.userAccountDataSet.DataSetName = "UserAccountDataSet";
+            this.userAccountDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 7;
@@ -208,16 +260,6 @@
             this.tableAdapterManager.UpdateOrder = QrSystem1.UserAccountDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.visitorAccountTableAdapter = null;
             // 
-            // userAccountDataSet1
-            // 
-            this.userAccountDataSet1.DataSetName = "UserAccountDataSet1";
-            this.userAccountDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // homeownerAccountBindingSource1
-            // 
-            this.homeownerAccountBindingSource1.DataMember = "homeownerAccount";
-            this.homeownerAccountBindingSource1.DataSource = this.userAccountDataSet1;
-            // 
             // homeownerAccountTableAdapter1
             // 
             this.homeownerAccountTableAdapter1.ClearBeforeFill = true;
@@ -230,51 +272,6 @@
             this.tableAdapterManager1.homeownerTableAdapter = null;
             this.tableAdapterManager1.UpdateOrder = QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager1.visitorAccountTableAdapter = null;
-            // 
-            // homeownerAccountDataGridView
-            // 
-            this.homeownerAccountDataGridView.AutoGenerateColumns = false;
-            this.homeownerAccountDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.homeownerAccountDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.homeownerAccountDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.homeownerAccountDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn7});
-            this.homeownerAccountDataGridView.DataSource = this.homeownerAccountBindingSource1;
-            this.homeownerAccountDataGridView.Location = new System.Drawing.Point(0, 38);
-            this.homeownerAccountDataGridView.Name = "homeownerAccountDataGridView";
-            this.homeownerAccountDataGridView.Size = new System.Drawing.Size(1131, 667);
-            this.homeownerAccountDataGridView.TabIndex = 8;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "blockNo";
-            this.dataGridViewTextBoxColumn4.HeaderText = "blockNo";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "lotNo";
-            this.dataGridViewTextBoxColumn5.HeaderText = "lotNo";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "contactNo";
-            this.dataGridViewTextBoxColumn7.HeaderText = "contactNo";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
             // HomeownersHistory
             // 
@@ -293,11 +290,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
