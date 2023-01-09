@@ -452,6 +452,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ScanQrCode.resx">
+      <DependentUpon>ScanQrCode.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VisitorsAccount.resx">
       <DependentUpon>VisitorsAccount.cs</DependentUpon>
     </EmbeddedResource>

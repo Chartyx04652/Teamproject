@@ -34,15 +34,15 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -78,9 +78,9 @@
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(195, 453);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(76, 16);
+            this.label13.Size = new System.Drawing.Size(84, 16);
             this.label13.TabIndex = 5;
-            this.label13.Text = "Develope By";
+            this.label13.Text = "Developed By";
             // 
             // label12
             // 
@@ -115,16 +115,6 @@
             this.label10.TabIndex = 2;
             this.label10.Text = "Welcome to the ";
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::QrSystem1.Properties.Resources.house__2_;
-            this.pictureBox5.Location = new System.Drawing.Point(95, 40);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.button3);
@@ -139,6 +129,7 @@
             // 
             // button3
             // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
@@ -177,7 +168,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 35);
             this.button1.TabIndex = 17;
-            this.button1.Text = "Homeowners Accoount";
+            this.button1.Text = "Homeowners Account";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -192,6 +183,16 @@
             this.label15.TabIndex = 7;
             this.label15.Text = "List of Accounts";
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::QrSystem1.Properties.Resources.house__2_;
+            this.pictureBox5.Location = new System.Drawing.Point(95, 40);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
+            // 
             // ListofAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,9 +206,9 @@
             this.Text = "ListofAccount";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }

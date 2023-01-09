@@ -38,10 +38,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
@@ -84,9 +80,9 @@
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(195, 453);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(76, 16);
+            this.label13.Size = new System.Drawing.Size(84, 16);
             this.label13.TabIndex = 5;
-            this.label13.Text = "Develope By";
+            this.label13.Text = "Developed By";
             // 
             // label3
             // 
@@ -134,10 +130,6 @@
             // 
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.linkLabel2);
-            this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label15);
@@ -149,10 +141,11 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::QrSystem1.Properties.Resources.recent;
-            this.pictureBox2.Location = new System.Drawing.Point(390, 469);
+            this.pictureBox2.Location = new System.Drawing.Point(403, 480);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(37, 41);
+            this.pictureBox2.Size = new System.Drawing.Size(35, 38);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
@@ -174,50 +167,6 @@
             this.button3.Text = "X";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.linkLabel2.Location = new System.Drawing.Point(175, 486);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(120, 13);
-            this.linkLabel2.TabIndex = 17;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "dhonmacrol@gmail.com";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Silver;
-            this.label18.Location = new System.Drawing.Point(19, 486);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(159, 16);
-            this.label18.TabIndex = 16;
-            this.label18.Text = "submit an email message to:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Silver;
-            this.label17.Location = new System.Drawing.Point(19, 470);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(276, 16);
-            this.label17.TabIndex = 15;
-            this.label17.Text = "To obtain access this App or any question about it";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Silver;
-            this.label16.Location = new System.Drawing.Point(19, 454);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(53, 16);
-            this.label16.TabIndex = 10;
-            this.label16.Text = "Support:";
             // 
             // button2
             // 
@@ -289,10 +238,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label15;

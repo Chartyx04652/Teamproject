@@ -30,5 +30,12 @@ namespace QrSystem1
             ListofAccount ss = new ListofAccount();
             ss.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ScanQrCode ss = new ScanQrCode();
+            ss.Show();
+        }
     }
 }

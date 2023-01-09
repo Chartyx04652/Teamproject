@@ -35,13 +35,13 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -75,7 +75,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(118, 608);
+            this.label14.Location = new System.Drawing.Point(108, 608);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(51, 16);
             this.label14.TabIndex = 8;
@@ -86,11 +86,11 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(118, 592);
+            this.label13.Location = new System.Drawing.Point(107, 592);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(76, 16);
+            this.label13.Size = new System.Drawing.Size(84, 16);
             this.label13.TabIndex = 7;
-            this.label13.Text = "Develope By";
+            this.label13.Text = "Developed By";
             // 
             // label12
             // 
@@ -125,16 +125,6 @@
             this.label10.TabIndex = 4;
             this.label10.Text = "Welcome to the ";
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::QrSystem1.Properties.Resources.house__2_;
-            this.pictureBox5.Location = new System.Drawing.Point(31, 38);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 3;
-            this.pictureBox5.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.button1);
@@ -148,6 +138,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
@@ -169,9 +160,19 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.label1.Location = new System.Drawing.Point(6, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 24);
+            this.label1.Size = new System.Drawing.Size(170, 24);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Visitor\'s Account";
+            this.label1.Text = "Visitors Account";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::QrSystem1.Properties.Resources.house__2_;
+            this.pictureBox5.Location = new System.Drawing.Point(31, 38);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
             // 
             // VisitorsHistory
             // 
@@ -186,9 +187,9 @@
             this.Text = "VisitorsHistory";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }

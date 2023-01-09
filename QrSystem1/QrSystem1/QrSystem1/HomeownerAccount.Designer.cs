@@ -83,9 +83,9 @@
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(195, 453);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(76, 16);
+            this.label13.Size = new System.Drawing.Size(84, 16);
             this.label13.TabIndex = 5;
-            this.label13.Text = "Develope By";
+            this.label13.Text = "Developed By";
             // 
             // label12
             // 

@@ -35,7 +35,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.homeownerAccountDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,14 +52,15 @@
             this.tableAdapterManager = new QrSystem1.UserAccountDataSetTableAdapters.TableAdapterManager();
             this.homeownerAccountTableAdapter1 = new QrSystem1.UserAccountDataSet1TableAdapters.homeownerAccountTableAdapter();
             this.tableAdapterManager1 = new QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -83,7 +83,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(118, 608);
+            this.label14.Location = new System.Drawing.Point(108, 608);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(51, 16);
             this.label14.TabIndex = 7;
@@ -94,11 +94,11 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(118, 592);
+            this.label13.Location = new System.Drawing.Point(107, 592);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(76, 16);
+            this.label13.Size = new System.Drawing.Size(84, 16);
             this.label13.TabIndex = 6;
-            this.label13.Text = "Develope By";
+            this.label13.Text = "Developed By";
             // 
             // label12
             // 
@@ -133,16 +133,6 @@
             this.label10.TabIndex = 3;
             this.label10.Text = "Welcome to the ";
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::QrSystem1.Properties.Resources.house__2_;
-            this.pictureBox5.Location = new System.Drawing.Point(31, 38);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
@@ -170,7 +160,7 @@
             this.homeownerAccountDataGridView.DataSource = this.homeownerAccountBindingSource1;
             this.homeownerAccountDataGridView.Location = new System.Drawing.Point(0, 38);
             this.homeownerAccountDataGridView.Name = "homeownerAccountDataGridView";
-            this.homeownerAccountDataGridView.Size = new System.Drawing.Size(1131, 667);
+            this.homeownerAccountDataGridView.Size = new System.Drawing.Size(1131, 670);
             this.homeownerAccountDataGridView.TabIndex = 8;
             // 
             // dataGridViewTextBoxColumn2
@@ -220,6 +210,7 @@
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
@@ -273,6 +264,16 @@
             this.tableAdapterManager1.UpdateOrder = QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager1.visitorAccountTableAdapter = null;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::QrSystem1.Properties.Resources.house__2_;
+            this.pictureBox5.Location = new System.Drawing.Point(31, 38);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
+            // 
             // HomeownersHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -287,7 +288,6 @@
             this.Load += new System.EventHandler(this.HomeownersHistory_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountDataGridView)).EndInit();
@@ -295,6 +295,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.homeownerAccountBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
