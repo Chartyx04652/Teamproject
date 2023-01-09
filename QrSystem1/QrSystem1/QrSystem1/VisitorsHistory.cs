@@ -16,5 +16,12 @@ namespace QrSystem1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            ListofAccount frm = new ListofAccount();
+            frm.Show();
+        }
     }
 }

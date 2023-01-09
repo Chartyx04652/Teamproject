@@ -226,9 +226,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.button1.Location = new System.Drawing.Point(1088, 4);
+            this.button1.Location = new System.Drawing.Point(1091, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 33);
+            this.button1.Size = new System.Drawing.Size(40, 40);
             this.button1.TabIndex = 6;
             this.button1.Text = ">";
             this.button1.UseVisualStyleBackColor = true;

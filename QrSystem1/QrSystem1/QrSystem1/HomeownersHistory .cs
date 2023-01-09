@@ -20,7 +20,7 @@ namespace QrSystem1
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            ExistingAcccount frm = new ExistingAcccount();
+            ListofAccount frm = new ListofAccount();
             frm.Show();
         }
 

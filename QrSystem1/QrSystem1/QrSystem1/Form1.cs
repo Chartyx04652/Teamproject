@@ -39,7 +39,7 @@ namespace QrSystem1
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            HomeownersHistory ss = new HomeownersHistory();
+            HistoryPageofAccount ss = new HistoryPageofAccount();
             ss.Show();
             
         }

@@ -367,6 +367,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HistoryPageofAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryPageofAccount.Designer.cs">
+      <DependentUpon>HistoryPageofAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomeownerAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -423,6 +429,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryPageofAccount.resx">
+      <DependentUpon>HistoryPageofAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomeownerAccount.resx">
       <DependentUpon>HomeownerAccount.cs</DependentUpon>

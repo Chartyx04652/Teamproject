@@ -30,5 +30,12 @@ namespace QrSystem1
             HomeownersHistory ss = new HomeownersHistory();
             ss.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            VisitorsHistory ss = new VisitorsHistory();
+            ss.Show();
+        }
     }
 }
