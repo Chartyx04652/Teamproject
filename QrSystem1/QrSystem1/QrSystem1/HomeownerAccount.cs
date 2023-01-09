@@ -206,7 +206,7 @@ namespace QrSystem1
                             pictureBox1.Image = code.GetGraphic(3);
 
                             cmd.ExecuteNonQuery();
-                            MessageBox.Show("Account succefully created.");
+                            MessageBox.Show("Account successfully created.");
 
                             String path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
                             pictureBox1.Image.Save(path + "\\" + DateTime.Now.Second.ToString() + DateTime.Now.Millisecond.ToString() + ".jpg", ImageFormat.Jpeg);
@@ -234,9 +234,7 @@ namespace QrSystem1
 
             }
 
-
         }
-
-        
+      
     }
 }

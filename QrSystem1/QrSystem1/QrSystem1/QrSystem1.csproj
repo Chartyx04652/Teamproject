@@ -51,6 +51,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.Dataviz.WinForms, Version=2.2.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.Dataviz.WinForms.2.2.1\lib\Bunifu.Dataviz.WinForms.dll</HintPath>
     </Reference>
@@ -347,6 +356,12 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="WindowsBase" />
+    <Reference Include="zxing, Version=0.16.8.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.8\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.8.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.8\lib\net47\zxing.presentation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Createnewaccount.cs">
@@ -367,11 +382,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="HistoryPageofAccount.cs">
+    <Compile Include="HistoryPageAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HistoryPageofAccount.Designer.cs">
-      <DependentUpon>HistoryPageofAccount.cs</DependentUpon>
+    <Compile Include="HistoryPageAccount.Designer.cs">
+      <DependentUpon>HistoryPageAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="HomeownerAccount.cs">
       <SubType>Form</SubType>
@@ -430,8 +445,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HistoryPageofAccount.resx">
-      <DependentUpon>HistoryPageofAccount.cs</DependentUpon>
+    <EmbeddedResource Include="HistoryPageAccount.resx">
+      <DependentUpon>HistoryPageAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomeownerAccount.resx">
       <DependentUpon>HomeownerAccount.cs</DependentUpon>
@@ -524,10 +539,10 @@
       <DependentUpon>History.mdf</DependentUpon>
     </Content>
     <Content Include="UserAccount.mdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="UserAccount_log.ldf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>UserAccount.mdf</DependentUpon>
     </Content>
   </ItemGroup>

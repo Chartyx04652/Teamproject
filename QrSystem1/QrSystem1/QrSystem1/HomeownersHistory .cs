@@ -27,8 +27,18 @@ namespace QrSystem1
         private void HomeownersHistory_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'userAccountDataSet1.homeownerAccount' table. You can move, or remove it, as needed.
-            this.homeownerAccountTableAdapter1.Fill(this.userAccountDataSet1.homeownerAccount);
+            this.homeownerAccountTableAdapter.Fill(this.userAccountDataSet1.homeownerAccount);
+            // TODO: This line of code loads data into the 'userAccountDataSet1.homeownerAccount' table. You can move, or remove it, as needed.
+            
             // s
+        }
+
+        private void homeownerAccountBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.homeownerAccountBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.userAccountDataSet1);
+
         }
     }
 }

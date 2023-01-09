@@ -23,5 +23,20 @@ namespace QrSystem1
             ListofAccount frm = new ListofAccount();
             frm.Show();
         }
+
+        private void visitorAccountBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.visitorAccountBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.userAccountDataSet1);
+
+        }
+
+        private void VisitorsHistory_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'userAccountDataSet1.visitorAccount' table. You can move, or remove it, as needed.
+            this.visitorAccountTableAdapter.Fill(this.userAccountDataSet1.visitorAccount);
+
+        }
     }
 }

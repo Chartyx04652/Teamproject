@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -35,13 +36,23 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.visitorAccountDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.visitorAccountBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.userAccountDataSet1 = new QrSystem1.UserAccountDataSet1();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.visitorAccountTableAdapter = new QrSystem1.UserAccountDataSet1TableAdapters.visitorAccountTableAdapter();
+            this.tableAdapterManager = new QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.visitorAccountDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.visitorAccountBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -125,15 +136,62 @@
             this.label10.TabIndex = 4;
             this.label10.Text = "Welcome to the ";
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::QrSystem1.Properties.Resources.house__2_;
+            this.pictureBox5.Location = new System.Drawing.Point(31, 38);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
+            // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.visitorAccountDataGridView);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(200, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1091, 708);
+            this.panel2.Size = new System.Drawing.Size(1111, 708);
             this.panel2.TabIndex = 1;
+            // 
+            // visitorAccountDataGridView
+            // 
+            this.visitorAccountDataGridView.AutoGenerateColumns = false;
+            this.visitorAccountDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.visitorAccountDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.visitorAccountDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.visitorAccountDataGridView.DataSource = this.visitorAccountBindingSource;
+            this.visitorAccountDataGridView.Location = new System.Drawing.Point(0, 38);
+            this.visitorAccountDataGridView.Name = "visitorAccountDataGridView";
+            this.visitorAccountDataGridView.Size = new System.Drawing.Size(1111, 670);
+            this.visitorAccountDataGridView.TabIndex = 9;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "purposeOfVisit";
+            this.dataGridViewTextBoxColumn3.HeaderText = "purposeOfVisit";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // visitorAccountBindingSource
+            // 
+            this.visitorAccountBindingSource.DataMember = "visitorAccount";
+            this.visitorAccountBindingSource.DataSource = this.userAccountDataSet1;
+            // 
+            // userAccountDataSet1
+            // 
+            this.userAccountDataSet1.DataSetName = "UserAccountDataSet1";
+            this.userAccountDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button1
             // 
@@ -164,32 +222,39 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Visitors Account";
             // 
-            // pictureBox5
+            // visitorAccountTableAdapter
             // 
-            this.pictureBox5.Image = global::QrSystem1.Properties.Resources.house__2_;
-            this.pictureBox5.Location = new System.Drawing.Point(31, 38);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 3;
-            this.pictureBox5.TabStop = false;
+            this.visitorAccountTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.homeownerAccountTableAdapter = null;
+            this.tableAdapterManager.homeownerHistoryTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.visitorAccountTableAdapter = this.visitorAccountTableAdapter;
+            this.tableAdapterManager.visitorHistoryTableAdapter = null;
             // 
             // VisitorsHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1291, 708);
+            this.ClientSize = new System.Drawing.Size(1311, 708);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VisitorsHistory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VisitorsHistory";
+            this.Load += new System.EventHandler(this.VisitorsHistory_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.visitorAccountDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.visitorAccountBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -207,5 +272,12 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private UserAccountDataSet1 userAccountDataSet1;
+        private System.Windows.Forms.BindingSource visitorAccountBindingSource;
+        private UserAccountDataSet1TableAdapters.visitorAccountTableAdapter visitorAccountTableAdapter;
+        private UserAccountDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.DataGridView visitorAccountDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }
