@@ -84,7 +84,7 @@ namespace QrSystem1
             Createnewaccount frm = new Createnewaccount();
             frm.Show();
         }
-        private void NameText1_KeyPress(object sender, KeyPressEventArgs e)
+        private void NameText1_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             if (Char.IsLetter(e.KeyChar)) return;
             if (Char.IsControl(e.KeyChar)) return;
@@ -93,7 +93,7 @@ namespace QrSystem1
             e.Handled = true;
         }
 
-        private void PurposeOfVisit_KeyPress(object sender, KeyPressEventArgs e)
+        private void PurposeOfVisit_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             if (Char.IsLetter(e.KeyChar)) return;
             if (Char.IsControl(e.KeyChar)) return;
@@ -127,6 +127,8 @@ namespace QrSystem1
 
                             cmd.ExecuteNonQuery();
                             MessageBox.Show("Account succefully created.");
+                            NameText1.Text = null;
+                            PurposeOfVisit.Text = null;
                             String path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
                             pictureimage1.Image.Save(path + "\\" + DateTime.Now.Second.ToString() + DateTime.Now.Millisecond.ToString() + ".jpg", ImageFormat.Jpeg);
 
@@ -158,6 +160,6 @@ namespace QrSystem1
             }
         }
 
-
+        
     }
 }

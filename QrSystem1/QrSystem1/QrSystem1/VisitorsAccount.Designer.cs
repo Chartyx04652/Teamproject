@@ -149,7 +149,7 @@
             this.button2.Location = new System.Drawing.Point(248, 368);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(127, 49);
-            this.button2.TabIndex = 24;
+            this.button2.TabIndex = 3;
             this.button2.Text = "Generate";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -187,9 +187,10 @@
             this.PurposeOfVisit.Location = new System.Drawing.Point(42, 272);
             this.PurposeOfVisit.Name = "PurposeOfVisit";
             this.PurposeOfVisit.Size = new System.Drawing.Size(135, 27);
-            this.PurposeOfVisit.TabIndex = 21;
+            this.PurposeOfVisit.TabIndex = 2;
             this.PurposeOfVisit.Text = "Purpose of Visit";
             this.PurposeOfVisit.Enter += new System.EventHandler(this.PurposeOfVisit_Enter);
+            this.PurposeOfVisit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PurposeOfVisit_KeyPress_1);
             this.PurposeOfVisit.Leave += new System.EventHandler(this.PurposeOfVisit_Leave);
             // 
             // NameText1
@@ -199,9 +200,10 @@
             this.NameText1.Location = new System.Drawing.Point(42, 239);
             this.NameText1.Name = "NameText1";
             this.NameText1.Size = new System.Drawing.Size(135, 27);
-            this.NameText1.TabIndex = 22;
+            this.NameText1.TabIndex = 1;
             this.NameText1.Text = "Full Name";
             this.NameText1.Enter += new System.EventHandler(this.NameText1_Enter);
+            this.NameText1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NameText1_KeyPress_1);
             this.NameText1.Leave += new System.EventHandler(this.NameText1_Leave);
             // 
             // label15

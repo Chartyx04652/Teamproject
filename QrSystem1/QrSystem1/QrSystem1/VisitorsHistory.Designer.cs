@@ -38,6 +38,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.visitorAccountDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -148,6 +150,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.visitorAccountDataGridView);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label1);
@@ -156,6 +160,25 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1111, 708);
             this.panel2.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(621, 11);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(251, 20);
+            this.textBox1.TabIndex = 11;
+            this.textBox1.Visible = false;
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(540, 9);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Delete";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // visitorAccountDataGridView
             // 
@@ -279,5 +302,7 @@
         private System.Windows.Forms.DataGridView visitorAccountDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
