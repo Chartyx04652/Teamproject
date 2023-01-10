@@ -35,34 +35,34 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.userAccountDataSet1 = new QrSystem1.UserAccountDataSet1();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.homeownerHistoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.homeownerHistoryTableAdapter = new QrSystem1.UserAccountDataSet1TableAdapters.homeownerHistoryTableAdapter();
-            this.tableAdapterManager = new QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager();
-            this.homeownerHistoryDataGridView = new System.Windows.Forms.DataGridView();
-            this.visitorHistoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.visitorHistoryTableAdapter = new QrSystem1.UserAccountDataSet1TableAdapters.visitorHistoryTableAdapter();
             this.visitorHistoryDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.visitorHistoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.userAccountDataSet1 = new QrSystem1.UserAccountDataSet1();
+            this.homeownerHistoryDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.homeownerHistoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.homeownerHistoryTableAdapter = new QrSystem1.UserAccountDataSet1TableAdapters.homeownerHistoryTableAdapter();
+            this.tableAdapterManager = new QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager();
+            this.visitorHistoryTableAdapter = new QrSystem1.UserAccountDataSet1TableAdapters.visitorHistoryTableAdapter();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.homeownerHistoryBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.homeownerHistoryDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.visitorHistoryBindingSource)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.visitorHistoryDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.visitorHistoryBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homeownerHistoryDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homeownerHistoryBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -135,6 +135,16 @@
             this.label10.TabIndex = 5;
             this.label10.Text = "Welcome to the ";
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::QrSystem1.Properties.Resources.house__2_;
+            this.pictureBox5.Location = new System.Drawing.Point(31, 38);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -155,7 +165,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.button1.Location = new System.Drawing.Point(1051, 0);
+            this.button1.Location = new System.Drawing.Point(1074, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(40, 39);
             this.button1.TabIndex = 6;
@@ -175,38 +185,48 @@
             this.panel2.Size = new System.Drawing.Size(1111, 708);
             this.panel2.TabIndex = 1;
             // 
+            // visitorHistoryDataGridView
+            // 
+            this.visitorHistoryDataGridView.AutoGenerateColumns = false;
+            this.visitorHistoryDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.visitorHistoryDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.visitorHistoryDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10});
+            this.visitorHistoryDataGridView.DataSource = this.visitorHistoryBindingSource;
+            this.visitorHistoryDataGridView.Location = new System.Drawing.Point(648, 36);
+            this.visitorHistoryDataGridView.Name = "visitorHistoryDataGridView";
+            this.visitorHistoryDataGridView.Size = new System.Drawing.Size(463, 672);
+            this.visitorHistoryDataGridView.TabIndex = 10;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "purposeOfVisit";
+            this.dataGridViewTextBoxColumn9.HeaderText = "purposeOfVisit";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "dateAndTime";
+            this.dataGridViewTextBoxColumn10.HeaderText = "dateAndTime";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // visitorHistoryBindingSource
+            // 
+            this.visitorHistoryBindingSource.DataMember = "visitorHistory";
+            this.visitorHistoryBindingSource.DataSource = this.userAccountDataSet1;
+            // 
             // userAccountDataSet1
             // 
             this.userAccountDataSet1.DataSetName = "UserAccountDataSet1";
             this.userAccountDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::QrSystem1.Properties.Resources.house__2_;
-            this.pictureBox5.Location = new System.Drawing.Point(31, 38);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            // 
-            // homeownerHistoryBindingSource
-            // 
-            this.homeownerHistoryBindingSource.DataMember = "homeownerHistory";
-            this.homeownerHistoryBindingSource.DataSource = this.userAccountDataSet1;
-            // 
-            // homeownerHistoryTableAdapter
-            // 
-            this.homeownerHistoryTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.homeownerAccountTableAdapter = null;
-            this.tableAdapterManager.homeownerHistoryTableAdapter = this.homeownerHistoryTableAdapter;
-            this.tableAdapterManager.UpdateOrder = QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.visitorAccountTableAdapter = null;
-            this.tableAdapterManager.visitorHistoryTableAdapter = this.visitorHistoryTableAdapter;
             // 
             // homeownerHistoryDataGridView
             // 
@@ -224,30 +244,6 @@
             this.homeownerHistoryDataGridView.Name = "homeownerHistoryDataGridView";
             this.homeownerHistoryDataGridView.Size = new System.Drawing.Size(650, 672);
             this.homeownerHistoryDataGridView.TabIndex = 10;
-            // 
-            // visitorHistoryBindingSource
-            // 
-            this.visitorHistoryBindingSource.DataMember = "visitorHistory";
-            this.visitorHistoryBindingSource.DataSource = this.userAccountDataSet1;
-            // 
-            // visitorHistoryTableAdapter
-            // 
-            this.visitorHistoryTableAdapter.ClearBeforeFill = true;
-            // 
-            // visitorHistoryDataGridView
-            // 
-            this.visitorHistoryDataGridView.AutoGenerateColumns = false;
-            this.visitorHistoryDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.visitorHistoryDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.visitorHistoryDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10});
-            this.visitorHistoryDataGridView.DataSource = this.visitorHistoryBindingSource;
-            this.visitorHistoryDataGridView.Location = new System.Drawing.Point(648, 36);
-            this.visitorHistoryDataGridView.Name = "visitorHistoryDataGridView";
-            this.visitorHistoryDataGridView.Size = new System.Drawing.Size(463, 672);
-            this.visitorHistoryDataGridView.TabIndex = 10;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -279,23 +275,27 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "dateAndTime";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
-            // dataGridViewTextBoxColumn8
+            // homeownerHistoryBindingSource
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.homeownerHistoryBindingSource.DataMember = "homeownerHistory";
+            this.homeownerHistoryBindingSource.DataSource = this.userAccountDataSet1;
             // 
-            // dataGridViewTextBoxColumn9
+            // homeownerHistoryTableAdapter
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "purposeOfVisit";
-            this.dataGridViewTextBoxColumn9.HeaderText = "purposeOfVisit";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.homeownerHistoryTableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn10
+            // tableAdapterManager
             // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "dateAndTime";
-            this.dataGridViewTextBoxColumn10.HeaderText = "dateAndTime";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.homeownerAccountTableAdapter = null;
+            this.tableAdapterManager.homeownerHistoryTableAdapter = this.homeownerHistoryTableAdapter;
+            this.tableAdapterManager.UpdateOrder = QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.visitorAccountTableAdapter = null;
+            this.tableAdapterManager.visitorHistoryTableAdapter = this.visitorHistoryTableAdapter;
+            // 
+            // visitorHistoryTableAdapter
+            // 
+            this.visitorHistoryTableAdapter.ClearBeforeFill = true;
             // 
             // HistoryPageAccount
             // 
@@ -311,14 +311,14 @@
             this.Load += new System.EventHandler(this.HistoryPageAccount_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.homeownerHistoryBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.homeownerHistoryDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.visitorHistoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.visitorHistoryDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.visitorHistoryBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homeownerHistoryDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.homeownerHistoryBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
