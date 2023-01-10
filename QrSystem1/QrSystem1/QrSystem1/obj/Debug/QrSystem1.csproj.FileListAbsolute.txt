@@ -182,3 +182,20 @@ C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\zxing.presentation.xml
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.ScanQrCode.resources
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.HistoryPageAccount.resources
+C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.Createnewaccount.resources
+C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.ExistingAcccount.resources
+C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.Form1.resources
+C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.HistoryPageAccount.resources
+C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.HomeownerAccount.resources
+C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.HomeownersHistory.resources
+C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.ListofAccount.resources
+C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.Properties.Resources.resources
+C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.ScanQrCode.resources
+C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.VisitorsAccount.resources
+C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.VisitorsHistory.resources
+C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.csproj.GenerateResource.cache
+C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.exe
+C:\Users\user\OneDrive\Documents\GitHub\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.pdb
