@@ -46,7 +46,6 @@
             this.userAccountDataSet1 = new QrSystem1.UserAccountDataSet1();
             this.label15 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.homeownerAccountTableAdapter = new QrSystem1.UserAccountDataSet1TableAdapters.homeownerAccountTableAdapter();
             this.tableAdapterManager = new QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager();
             this.button2 = new System.Windows.Forms.Button();
@@ -234,8 +233,6 @@
             // 
             // bunifuElipse1
             // 
-            this.bunifuElipse1.ElipseRadius = 7;
-            this.bunifuElipse1.TargetControl = this;
             // 
             // homeownerAccountTableAdapter
             // 
@@ -297,7 +294,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;

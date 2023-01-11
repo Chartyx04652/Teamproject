@@ -1,20 +1,7 @@
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\QrSystem1.exe.config
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\QrSystem1.exe
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\QrSystem1.pdb
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\Bunifu.Dataviz.WinForms.xml
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\Bunifu.UI.WinForms.xml
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\Bunifu.UI.WinForms.1.5.3.xml
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\Microsoft.Win32.Registry.xml
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\Microsoft.Win32.Registry.AccessControl.xml
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\Microsoft.Win32.SystemEvents.xml
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\Newtonsoft.Json.xml
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\RestSharp.xml
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Buffers.xml
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.CodeDom.xml
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Configuration.ConfigurationManager.xml
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Data.Odbc.xml
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Data.OleDb.xml
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Data.SqlClient.xml
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Diagnostics.EventLog.xml
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Diagnostics.PerformanceCounter.xml
@@ -22,7 +9,6 @@ C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.IO.FileSystem.AccessControl.xml
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.IO.Packaging.xml
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.IO.Ports.xml
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Memory.xml
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Numerics.Vectors.xml
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Security.AccessControl.xml
@@ -34,7 +20,6 @@ C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Security.Principal.Windows.xml
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Syndication.xml
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.ServiceProcess.ServiceController.xml
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Text.Encoding.CodePages.xml
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Threading.AccessControl.xml
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.AssemblyReference.cache
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.SuggestedBindingRedirects.cache
@@ -48,8 +33,6 @@ C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.VisitorsAccount.resources
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.GenerateResource.cache
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.CoreCompileInputs.cache
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.Fody.CopyLocal.cache
-C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.Fody.RuntimeCopyLocal.cache
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.CopyComplete
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.exe
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.pdb
@@ -112,3 +95,206 @@ C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\UserAccount_log.ldf
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\History.mdf
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\History_log.ldf
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\History.mdf
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\History_log.ldf
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\UserAccount.mdf
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\UserAccount_log.ldf
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\QrSystem1.exe.config
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\QrSystem1.exe
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\QrSystem1.pdb
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\AForge.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\AForge.Video.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\AForge.Video.DirectShow.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\Bunifu.Dataviz.WinForms.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\Bunifu.UI.WinForms.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\Bunifu.UI.WinForms.1.5.3.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\Microsoft.Win32.Registry.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\Microsoft.Win32.Registry.AccessControl.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\Microsoft.Win32.SystemEvents.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\Newtonsoft.Json.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\RestSharp.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Buffers.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.CodeDom.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Configuration.ConfigurationManager.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Data.Odbc.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Data.OleDb.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Data.SqlClient.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Diagnostics.EventLog.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Diagnostics.PerformanceCounter.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Drawing.Common.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.IO.FileSystem.AccessControl.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.IO.Packaging.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.IO.Ports.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Memory.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Numerics.Vectors.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Security.AccessControl.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Security.Cryptography.Cng.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Security.Cryptography.Pkcs.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Security.Cryptography.ProtectedData.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Security.Cryptography.Xml.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Security.Permissions.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Security.Principal.Windows.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Syndication.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.ServiceProcess.ServiceController.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Text.Encoding.CodePages.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Threading.AccessControl.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\zxing.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\bin\Release\zxing.presentation.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.AssemblyReference.cache
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.Createnewaccount.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.ExistingAcccount.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.Form1.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.HistoryPageAccount.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.HomeownerAccount.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.HomeownersHistory.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.ListofAccount.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.Properties.Resources.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.ScanQrCode.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.VisitorsAccount.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.VisitorsHistory.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.GenerateResource.cache
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.CoreCompileInputs.cache
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.Fody.CopyLocal.cache
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.CopyComplete
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.exe
+C:\Users\Adachi Tenka\Desktop\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.pdb
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.AssemblyReference.cache
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\obj\Release\QrSystem1.Createnewaccount.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\obj\Release\QrSystem1.ExistingAcccount.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\obj\Release\QrSystem1.Form1.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\obj\Release\QrSystem1.HistoryPageAccount.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\obj\Release\QrSystem1.HomeownerAccount.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\obj\Release\QrSystem1.HomeownersHistory.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\obj\Release\QrSystem1.ListofAccount.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\obj\Release\QrSystem1.Properties.Resources.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\obj\Release\QrSystem1.ScanQrCode.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\obj\Release\QrSystem1.VisitorsAccount.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\obj\Release\QrSystem1.VisitorsHistory.resources
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.GenerateResource.cache
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.CoreCompileInputs.cache
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\History.mdf
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\History_log.ldf
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\UserAccount.mdf
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\UserAccount_log.ldf
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\QrSystem1.exe.config
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\QrSystem1.exe
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\QrSystem1.pdb
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\AForge.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\AForge.Video.DirectShow.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\AForge.Video.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\Newtonsoft.Json.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\QRCoder.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Diagnostics.EventLog.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Drawing.Common.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.IO.FileSystem.AccessControl.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.IO.Packaging.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.IO.Pipes.AccessControl.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.IO.Ports.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Numerics.Vectors.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Security.AccessControl.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Security.Cryptography.Cng.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Security.Cryptography.Pkcs.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Security.Cryptography.Xml.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Security.Permissions.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Security.Principal.Windows.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Duplex.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Http.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.NetTcp.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Primitives.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Security.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Syndication.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.ServiceProcess.ServiceController.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Threading.AccessControl.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Web.Services.Description.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\zxing.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\zxing.presentation.dll
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\AForge.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\AForge.Video.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\AForge.Video.DirectShow.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\Newtonsoft.Json.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Diagnostics.EventLog.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Diagnostics.PerformanceCounter.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Drawing.Common.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.IO.FileSystem.AccessControl.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.IO.Packaging.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.IO.Ports.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Numerics.Vectors.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Security.AccessControl.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Security.Cryptography.Cng.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Security.Cryptography.Pkcs.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Security.Cryptography.ProtectedData.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Security.Cryptography.Xml.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Security.Permissions.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Security.Principal.Windows.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Duplex.pdb
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Http.pdb
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.NetTcp.pdb
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Primitives.pdb
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Security.pdb
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Syndication.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.ServiceProcess.ServiceController.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Threading.AccessControl.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\System.Web.Services.Description.pdb
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\zxing.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\bin\Release\zxing.presentation.xml
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.CopyComplete
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\obj\Release\QrSystem1.exe
+C:\Users\Adachi Tenka\Desktop\QrSystem1 - Copy\QrSystem1\QrSystem1\obj\Release\QrSystem1.pdb
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\AForge.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\AForge.Video.DirectShow.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\AForge.Video.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\Newtonsoft.Json.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\QRCoder.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Diagnostics.EventLog.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Drawing.Common.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.IO.FileSystem.AccessControl.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.IO.Packaging.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.IO.Pipes.AccessControl.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.IO.Ports.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Numerics.Vectors.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Security.AccessControl.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Security.Cryptography.Cng.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Security.Cryptography.Pkcs.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Security.Cryptography.Xml.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Security.Permissions.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Security.Principal.Windows.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Duplex.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Http.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.NetTcp.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Primitives.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Security.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Syndication.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.ServiceProcess.ServiceController.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Threading.AccessControl.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Web.Services.Description.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\zxing.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\zxing.presentation.dll
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\AForge.xml
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\AForge.Video.xml
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\AForge.Video.DirectShow.xml
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Duplex.pdb
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Http.pdb
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.NetTcp.pdb
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Primitives.pdb
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.ServiceModel.Security.pdb
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\System.Web.Services.Description.pdb
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\zxing.xml
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Release\zxing.presentation.xml
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.HistoryPageAccount.resources
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.ScanQrCode.resources
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.VisitorsHistory.resources

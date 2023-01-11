@@ -1,18 +1,8 @@
-﻿using RestSharp.Extensions;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System;
 using System.Drawing;
 using System.Drawing.Imaging;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Data.SqlClient;
-using System.Windows.Forms.VisualStyles;
-using System.Windows.Controls;
 using System.Configuration;
 
 namespace QrSystem1
