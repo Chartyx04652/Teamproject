@@ -207,6 +207,10 @@ namespace QrSystem1
 
                             cmd.ExecuteNonQuery();
                             MessageBox.Show("Account successfully created.");
+                            NameText.Text = null;
+                            textBox1.Text = null;
+                            textBox2.Text = null;
+                            ContactText.Text = null;
 
                             String path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
                             pictureBox1.Image.Save(path + "\\" + DateTime.Now.Second.ToString() + DateTime.Now.Millisecond.ToString() + ".jpg", ImageFormat.Jpeg);

@@ -49,6 +49,8 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.homeownerAccountTableAdapter = new QrSystem1.UserAccountDataSet1TableAdapters.homeownerAccountTableAdapter();
             this.tableAdapterManager = new QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
@@ -140,6 +142,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.homeownerAccountDataGridView);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.button1);
@@ -164,8 +168,7 @@
             this.homeownerAccountDataGridView.Name = "homeownerAccountDataGridView";
             this.homeownerAccountDataGridView.Size = new System.Drawing.Size(1148, 672);
             this.homeownerAccountDataGridView.TabIndex = 8;
-            this.homeownerAccountDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.homeownerAccountDataGridView_CellClick);
-            this.homeownerAccountDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.homeownerAccountDataGridView_CellContentClick);
+
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -247,6 +250,25 @@
             this.tableAdapterManager.visitorAccountTableAdapter = null;
             this.tableAdapterManager.visitorHistoryTableAdapter = null;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(540, 9);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Delete";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(621, 11);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(251, 20);
+            this.textBox1.TabIndex = 10;
+            this.textBox1.Visible = false;
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
+            // 
             // HomeownersHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -295,5 +317,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -108,13 +108,13 @@ namespace QrSystem1
                                 if (!reader1.Read())
                                 {
                                     MessageBox.Show("Account does not exist.");
-                                    button2.Text = "Scan";
+                                    button2.Text = "&Scan";
                                     scanQR = false;
                                 }
                                 else 
                                 {
                                     MessageBox.Show("Gates open.");
-                                    button2.Text = "Scan";
+                                    button2.Text = "&Scan";
                                     scanQR = false;
                                     String query3 = $"insert into visitorHistory (Name, purposeOfVisit, dateAndTime) values('{qrcontent[0]}','{qrcontent[1]}',getdate())";
                                     using (connection = new SqlConnection(connectionString))
@@ -134,7 +134,7 @@ namespace QrSystem1
                         else
                         {
                             MessageBox.Show("Gates open.");
-                            button2.Text = "Scan";
+                            button2.Text = "&Scan";
                             scanQR = false; 
                             String query2 = $"insert into homeownerHistory (Name, blockNo, lotNo, contactNo, dateAndTime) values('{qrcontent[0]}','{qrcontent[1]}','{qrcontent[2]}','{qrcontent[3]}',getdate())";
                             using (connection = new SqlConnection(connectionString))
@@ -268,6 +268,14 @@ namespace QrSystem1
             }
         }
 
-        
+        private void ScanQrCode_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.S)
+            {
+                button2.PerformClick();
+            }
+            
+            
+        }
     }
 }

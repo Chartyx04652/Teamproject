@@ -164,7 +164,7 @@
             this.textBox1.Location = new System.Drawing.Point(42, 272);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(135, 27);
-            this.textBox1.TabIndex = 20;
+            this.textBox1.TabIndex = 2;
             this.textBox1.Text = "Blk No.";
             this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
@@ -177,7 +177,7 @@
             this.NameText.Location = new System.Drawing.Point(42, 239);
             this.NameText.Name = "NameText";
             this.NameText.Size = new System.Drawing.Size(135, 27);
-            this.NameText.TabIndex = 21;
+            this.NameText.TabIndex = 1;
             this.NameText.Text = "Full Name";
             this.NameText.Enter += new System.EventHandler(this.NameText_Enter);
             this.NameText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NameText_KeyPress);
@@ -190,7 +190,7 @@
             this.ContactText.Location = new System.Drawing.Point(42, 338);
             this.ContactText.Name = "ContactText";
             this.ContactText.Size = new System.Drawing.Size(135, 27);
-            this.ContactText.TabIndex = 22;
+            this.ContactText.TabIndex = 4;
             this.ContactText.Text = "Contact No.";
             this.ContactText.Enter += new System.EventHandler(this.ContactText_Enter);
             this.ContactText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ContactText_KeyPress);
@@ -213,7 +213,7 @@
             this.button2.Location = new System.Drawing.Point(248, 368);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(127, 49);
-            this.button2.TabIndex = 24;
+            this.button2.TabIndex = 5;
             this.button2.Text = "Generate";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -225,7 +225,7 @@
             this.textBox2.Location = new System.Drawing.Point(42, 305);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(135, 27);
-            this.textBox2.TabIndex = 25;
+            this.textBox2.TabIndex = 3;
             this.textBox2.Text = "Lot No.";
             this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
             this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);

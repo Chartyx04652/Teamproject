@@ -148,7 +148,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 11;
-            this.button2.Text = "Scan";
+            this.button2.Text = "&Scan";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.ScanBtn_Click);
             // 
@@ -205,11 +205,13 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "ScanQrCode";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ScanQrCode";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ScanQrCode_FormClosed);
             this.Load += new System.EventHandler(this.ScanQrCode_Load_1);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ScanQrCode_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
