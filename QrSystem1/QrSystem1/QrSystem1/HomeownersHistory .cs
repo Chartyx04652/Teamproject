@@ -69,18 +69,18 @@ namespace QrSystem1
         //    }
         //}
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (textBox1.Visible == true)
-            {
-                textBox1.Visible = false;
-            }
-            else
-            {
-                textBox1.Visible = true;
-            }
-
-        }
+        //private void button2_Click(object sender, EventArgs e)
+        //{
+        //    if (textBox1.Visible == true)
+        //    {
+        //        textBox1.Visible = false;
+        //    }
+        //    else
+        //    {
+        //        textBox1.Visible = true;
+        //    }
+            //TextboxFilter();
+        //}
         private void PopulatehomeownerAccount()
         {
             using (connection = new SqlConnection(connectionString))
@@ -92,43 +92,84 @@ namespace QrSystem1
             }
 
         }
-        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        //private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        //{
+        //if (e.KeyCode == Keys.Enter)
+        //{
+        // using (connection = new SqlConnection(connectionString))
+        //  using (SqlCommand com = new SqlCommand("select * from homeownerAccount where Name = '" + textBox1.Text + "'", connection))
+
+        //  {
+        //      connection.Open();
+        //      SqlDataReader reader = com.ExecuteReader();
+        //  }
+
+        //}
+        // }
+
+        //private void TextboxFilter()
+        //{
+          //  if (e.KeyCode == Keys.Enter)
+            //{
+              //  if (MessageBox.Show("Are you sure you want to delete this account?", "Delete account", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                //{
+                  //  String query = $"select * from homeownerAccount where Name = '{textBox1.Text}'";
+                    //using (connection = new SqlConnection(connectionString))
+                   // using (SqlCommand cmd = new SqlCommand(query, connection))
+                    //{
+                      //  connection.Open();
+                        //SqlDataReader reader = cmd.ExecuteReader();
+                     //   if (!reader.Read())
+                       // {
+                      //      MessageBox.Show("Account does not exist.");
+                        //}
+                        //else
+                        //{
+                          //  String query1 = $"delete from homeownerAccount where Name = '{textBox1.Text}'";
+                            //using (connection = new SqlConnection(connectionString))
+                        //    using (SqlCommand cmd1 = new SqlCommand(query1, connection))
+                          //  {
+                            //    connection.Open();
+                              //  cmd1.ExecuteNonQuery();
+                       //         MessageBox.Show("Account Deleted.");
+                         //       textBox1.Text = null;
+                           //     textBox1.Visible = false;
+                             //   adapter = new SqlDataAdapter(@"select Name, blockNo, lotNo, contactNo from homeownerAccount", connection);
+                      //          datatable = new DataTable();
+                        //        adapter.Fill(datatable);
+                           //     homeownerAccountDataGridView.DataSource = datatable;
+                          //  }
+                 //       }
+                   //     PopulatehomeownerAccount();
+            //        }
+              //  }
+        //    }
+          //  using (connection = new SqlConnection(connectionString))
+        //    using (SqlCommand com = new SqlCommand("select * from homeownerAccount where Name = '"+textBox1.Text+"'", connection))
+
+          //  {
+            //    connection.Open();
+          //      SqlDataReader reader = com.ExecuteReader();
+         //   }
+
+       // }
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                if (MessageBox.Show("Are you sure you want to delete this account?", "Delete account", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    String query = $"select * from homeownerAccount where Name = '{textBox1.Text}'";
-                    using (connection = new SqlConnection(connectionString))
-                    using (SqlCommand cmd = new SqlCommand(query, connection))
-                    {
-                        connection.Open();
-                        SqlDataReader reader = cmd.ExecuteReader();
-                        if (!reader.Read())
-                        {
-                            MessageBox.Show("Account does not exist.");
-                        }
-                        else
-                        {
-                            String query1 = $"delete from homeownerAccount where Name = '{textBox1.Text}'";
-                            using (connection = new SqlConnection(connectionString))
-                            using (SqlCommand cmd1 = new SqlCommand(query1, connection))
-                            {
-                                connection.Open();
-                                cmd1.ExecuteNonQuery();
-                                MessageBox.Show("Account Deleted.");
-                                textBox1.Text = null;
-                                textBox1.Visible = false;
-                                adapter = new SqlDataAdapter(@"select Name, blockNo, lotNo, contactNo from homeownerAccount", connection);
-                                datatable = new DataTable();
-                                adapter.Fill(datatable);
-                                homeownerAccountDataGridView.DataSource = datatable;
-                            }
-                        }
-                        PopulatehomeownerAccount();
-                    }
-                }
-            }
+
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            connection = new SqlConnection(connectionString);
+            datatable = new DataTable();
+            adapter = new SqlDataAdapter("select * from homeownerAccount where [Name] like '"+txtSearch.Text+"%'", connection);
+            adapter.Fill(datatable);
+            homeownerAccountDataGridView.DataSource = datatable;
         }
     }
-}
+}   

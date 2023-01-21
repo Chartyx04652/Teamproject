@@ -48,8 +48,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.homeownerAccountTableAdapter = new QrSystem1.UserAccountDataSet1TableAdapters.homeownerAccountTableAdapter();
             this.tableAdapterManager = new QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
@@ -141,8 +141,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.btnSearch);
+            this.panel2.Controls.Add(this.txtSearch);
             this.panel2.Controls.Add(this.homeownerAccountDataGridView);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.button1);
@@ -167,7 +167,6 @@
             this.homeownerAccountDataGridView.Name = "homeownerAccountDataGridView";
             this.homeownerAccountDataGridView.Size = new System.Drawing.Size(1148, 672);
             this.homeownerAccountDataGridView.TabIndex = 8;
-
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -231,9 +230,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // bunifuElipse1
-            // 
-            // 
             // homeownerAccountTableAdapter
             // 
             this.homeownerAccountTableAdapter.ClearBeforeFill = true;
@@ -247,24 +243,23 @@
             this.tableAdapterManager.visitorAccountTableAdapter = null;
             this.tableAdapterManager.visitorHistoryTableAdapter = null;
             // 
-            // button2
+            // txtSearch
             // 
-            this.button2.Location = new System.Drawing.Point(540, 9);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.txtSearch.Location = new System.Drawing.Point(680, 10);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(314, 20);
+            this.txtSearch.TabIndex = 12;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
-            // textBox1
+            // btnSearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(621, 11);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(251, 20);
-            this.textBox1.TabIndex = 10;
-            this.textBox1.Visible = false;
-            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
+            this.btnSearch.Location = new System.Drawing.Point(599, 10);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 13;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // HomeownersHistory
             // 
@@ -313,7 +308,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

@@ -58,56 +58,65 @@ namespace QrSystem1
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (textBox1.Visible == true)
-            {
-                textBox1.Visible = false;
-            }
-            else
-            {
-                textBox1.Visible = true;
-            }
+        //private void button2_Click(object sender, EventArgs e)
+        //{
+        //    if (textBox1.Visible == true)
+        //    {
+        //        textBox1.Visible = false;
+        //    }
+        //    else
+        //    {
+        //        textBox1.Visible = true;
+        //    }
 
-        }
+        //}
 
-        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        //private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        //{
+        //    if (e.KeyCode == Keys.Enter)
+        //    {
+        //        if (MessageBox.Show("Are you sure you want to delete this account?", "Delete account", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+        //        {
+        //            String query = $"select * from visitorAccount where Name = '{textBox1.Text}'";
+        //            using (connection = new SqlConnection(connectionString))
+        //            using (SqlCommand cmd = new SqlCommand(query, connection))
+        //            {
+        //                connection.Open();
+        //                SqlDataReader reader = cmd.ExecuteReader();
+        //                if (!reader.Read())
+        //                {
+        //                    MessageBox.Show("Account does not exist.");
+        //                }
+        //                else
+        //                {
+        //                    String query1 = $"delete from visitorAccount where Name = '{textBox1.Text}'";
+        //                    using (connection = new SqlConnection(connectionString))
+        //                    using (SqlCommand cmd1 = new SqlCommand(query1, connection))
+        //                    {
+        //                        connection.Open();
+        //                        cmd1.ExecuteNonQuery();
+        //                        MessageBox.Show("Account Deleted.");
+        //                        textBox1.Text = null;
+        //                        textBox1.Visible = false;
+        //                        adapter = new SqlDataAdapter(@"select Name, purposeOfVisit from visitorAccount", connection);
+        //                        datatable = new DataTable();
+        //                        adapter.Fill(datatable);
+        //                        visitorAccountDataGridView.DataSource = datatable;
+        //                    }
+        //                }
+        //            PopulatevisitorAccount();
+        //            }
+        //        }
+        //    }
+        //}
+
+        private void btnSearch_Click(object sender, EventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                if (MessageBox.Show("Are you sure you want to delete this account?", "Delete account", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    String query = $"select * from visitorAccount where Name = '{textBox1.Text}'";
-                    using (connection = new SqlConnection(connectionString))
-                    using (SqlCommand cmd = new SqlCommand(query, connection))
-                    {
-                        connection.Open();
-                        SqlDataReader reader = cmd.ExecuteReader();
-                        if (!reader.Read())
-                        {
-                            MessageBox.Show("Account does not exist.");
-                        }
-                        else
-                        {
-                            String query1 = $"delete from visitorAccount where Name = '{textBox1.Text}'";
-                            using (connection = new SqlConnection(connectionString))
-                            using (SqlCommand cmd1 = new SqlCommand(query1, connection))
-                            {
-                                connection.Open();
-                                cmd1.ExecuteNonQuery();
-                                MessageBox.Show("Account Deleted.");
-                                textBox1.Text = null;
-                                textBox1.Visible = false;
-                                adapter = new SqlDataAdapter(@"select Name, purposeOfVisit from visitorAccount", connection);
-                                datatable = new DataTable();
-                                adapter.Fill(datatable);
-                                visitorAccountDataGridView.DataSource = datatable;
-                            }
-                        }
-                    PopulatevisitorAccount();
-                    }
-                }
-            }
+            connection = new SqlConnection(connectionString);
+            datatable = new DataTable();
+            adapter = new SqlDataAdapter("select * from visitorAccount where [Name] like '" + txtSearch.Text + "%'", connection);
+            adapter.Fill(datatable);
+            visitorAccountDataGridView.DataSource = datatable;
         }
     }
 }
