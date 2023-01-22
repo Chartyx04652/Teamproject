@@ -26,7 +26,9 @@ namespace QrSystem1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            LoginForm ss = new LoginForm();
+            ss.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)

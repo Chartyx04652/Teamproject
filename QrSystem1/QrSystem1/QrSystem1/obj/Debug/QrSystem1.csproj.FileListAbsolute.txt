@@ -56,20 +56,7 @@ D:\IDM\QrCodeSystem\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.csproj.Fod
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\QrSystem1.exe.config
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\QrSystem1.exe
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\QrSystem1.pdb
-E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\Bunifu.Dataviz.WinForms.xml
-E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\Bunifu.UI.WinForms.xml
-E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
-E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\Microsoft.Win32.Registry.xml
-E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\Microsoft.Win32.Registry.AccessControl.xml
-E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\Microsoft.Win32.SystemEvents.xml
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\Newtonsoft.Json.xml
-E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\RestSharp.xml
-E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Buffers.xml
-E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.CodeDom.xml
-E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Configuration.ConfigurationManager.xml
-E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Data.Odbc.xml
-E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Data.OleDb.xml
-E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Data.SqlClient.xml
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Diagnostics.EventLog.xml
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Diagnostics.PerformanceCounter.xml
@@ -77,7 +64,6 @@ E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Drawin
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.IO.FileSystem.AccessControl.xml
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.IO.Packaging.xml
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.IO.Ports.xml
-E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Memory.xml
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Numerics.Vectors.xml
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Security.AccessControl.xml
@@ -89,7 +75,6 @@ E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Securi
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Security.Principal.Windows.xml
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.ServiceModel.Syndication.xml
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.ServiceProcess.ServiceController.xml
-E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Text.Encoding.CodePages.xml
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Threading.AccessControl.xml
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.csproj.AssemblyReference.cache
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.csproj.SuggestedBindingRedirects.cache
@@ -103,8 +88,6 @@ E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.Pro
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.VisitorsAccount.resources
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.csproj.GenerateResource.cache
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.csproj.CoreCompileInputs.cache
-E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.csproj.Fody.CopyLocal.cache
-E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.csproj.Fody.RuntimeCopyLocal.cache
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.csproj.CopyComplete
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.exe
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.pdb
@@ -156,7 +139,6 @@ C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\UserAccount_log.ldf
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\History.mdf
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\History_log.ldf
-E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.HistoryPageofAccount.resources
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.ScanQrCode.resources
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\AForge.xml
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\AForge.Video.xml
@@ -310,3 +292,49 @@ C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.ServiceModel.Primitives.pdb
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.ServiceModel.Security.pdb
 C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Web.Services.Description.pdb
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\AForge.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\AForge.Video.DirectShow.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\AForge.Video.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\Newtonsoft.Json.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\QRCoder.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Diagnostics.EventLog.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Drawing.Common.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.IO.FileSystem.AccessControl.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.IO.Packaging.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.IO.Pipes.AccessControl.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.IO.Ports.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Numerics.Vectors.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Security.AccessControl.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Security.Cryptography.Cng.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Security.Cryptography.Pkcs.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Security.Cryptography.Xml.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Security.Permissions.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Security.Principal.Windows.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.ServiceModel.Duplex.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.ServiceModel.Http.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.ServiceModel.NetTcp.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.ServiceModel.Primitives.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.ServiceModel.Security.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.ServiceModel.Syndication.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.ServiceProcess.ServiceController.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Threading.AccessControl.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Web.Services.Description.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\zxing.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\zxing.presentation.dll
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\AForge.xml
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\AForge.Video.xml
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\AForge.Video.DirectShow.xml
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.ServiceModel.Duplex.pdb
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.ServiceModel.Http.pdb
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.ServiceModel.NetTcp.pdb
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.ServiceModel.Primitives.pdb
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.ServiceModel.Security.pdb
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\System.Web.Services.Description.pdb
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\zxing.xml
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\zxing.presentation.xml
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.HistoryPageAccount.resources
+E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.LoginForm.resources
