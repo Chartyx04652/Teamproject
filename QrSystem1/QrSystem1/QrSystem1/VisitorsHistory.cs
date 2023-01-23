@@ -5,6 +5,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,6 +43,8 @@ namespace QrSystem1
 
         private void VisitorsHistory_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'userAccountDataSet2.visitorAccount' table. You can move, or remove it, as needed.
+            this.visitorAccountTableAdapter1.Fill(this.userAccountDataSet2.visitorAccount);
             // TODO: This line of code loads data into the 'userAccountDataSet1.visitorAccount' table. You can move, or remove it, as needed.
             this.visitorAccountTableAdapter.Fill(this.userAccountDataSet1.visitorAccount);
             PopulatevisitorAccount();
@@ -58,65 +61,37 @@ namespace QrSystem1
 
         }
 
-        //private void button2_Click(object sender, EventArgs e)
-        //{
-        //    if (textBox1.Visible == true)
-        //    {
-        //        textBox1.Visible = false;
-        //    }
-        //    else
-        //    {
-        //        textBox1.Visible = true;
-        //    }
-
-        //}
-
-        //private void textBox1_KeyDown(object sender, KeyEventArgs e)
-        //{
-        //    if (e.KeyCode == Keys.Enter)
-        //    {
-        //        if (MessageBox.Show("Are you sure you want to delete this account?", "Delete account", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-        //        {
-        //            String query = $"select * from visitorAccount where Name = '{textBox1.Text}'";
-        //            using (connection = new SqlConnection(connectionString))
-        //            using (SqlCommand cmd = new SqlCommand(query, connection))
-        //            {
-        //                connection.Open();
-        //                SqlDataReader reader = cmd.ExecuteReader();
-        //                if (!reader.Read())
-        //                {
-        //                    MessageBox.Show("Account does not exist.");
-        //                }
-        //                else
-        //                {
-        //                    String query1 = $"delete from visitorAccount where Name = '{textBox1.Text}'";
-        //                    using (connection = new SqlConnection(connectionString))
-        //                    using (SqlCommand cmd1 = new SqlCommand(query1, connection))
-        //                    {
-        //                        connection.Open();
-        //                        cmd1.ExecuteNonQuery();
-        //                        MessageBox.Show("Account Deleted.");
-        //                        textBox1.Text = null;
-        //                        textBox1.Visible = false;
-        //                        adapter = new SqlDataAdapter(@"select Name, purposeOfVisit from visitorAccount", connection);
-        //                        datatable = new DataTable();
-        //                        adapter.Fill(datatable);
-        //                        visitorAccountDataGridView.DataSource = datatable;
-        //                    }
-        //                }
-        //            PopulatevisitorAccount();
-        //            }
-        //        }
-        //    }
-        //}
-
-        private void btnSearch_Click(object sender, EventArgs e)
+        private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             connection = new SqlConnection(connectionString);
             datatable = new DataTable();
             adapter = new SqlDataAdapter("select * from visitorAccount where [Name] like '" + txtSearch.Text + "%'", connection);
             adapter.Fill(datatable);
             visitorAccountDataGridView.DataSource = datatable;
+        }
+
+        private void visitorAccountDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to create a QRCode?", "QRCode generate", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.visitorAccountDataGridView.Rows[e.RowIndex];
+
+                    QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
+                    var Mydata = row.Cells["dataGridViewTextBoxColumn2"].Value.ToString();
+                    var Mydata1 = row.Cells["dataGridViewTextBoxColumn3"].Value.ToString();
+                    var Mydata2 = Mydata + "," + Mydata1;
+                    var Mydata3 = QG.CreateQrCode(Mydata2, QRCoder.QRCodeGenerator.ECCLevel.H);
+                    var code = new QRCoder.QRCode(Mydata3);
+                    //pictureBox1.Image = code.GetGraphic(3);
+
+                    String path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                    code.GetGraphic(3).Save(path + "\\" + DateTime.Now.Second.ToString() + DateTime.Now.Millisecond.ToString() + ".jpg", ImageFormat.Jpeg);
+
+                    MessageBox.Show("QRCode successfully generated.");
+                }
+            }
         }
     }
 }

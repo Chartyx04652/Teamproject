@@ -127,9 +127,7 @@ namespace QrSystem1
                                 }
                             }
 
-                            //MessageBox.Show("Account does not exist.");
-                            //button2.Text = "Scan";
-                            //scanQR = false;
+                            
                         }
                         else
                         {
@@ -156,108 +154,6 @@ namespace QrSystem1
             scanQR = true;
         }
 
-        //bool timeoutB = false;
-        //private void VideoCaptureDevice_Form(object sender, AForge.Video.NewFrameEventArgs eventArgs)
-        //{
-        //    Bitmap bitmap = (Bitmap)eventArgs.Frame.Clone();
-        //    BarcodeReader barcode = new BarcodeReader();
-        //    Result result = barcode.Decode(bitmap);
-
-        //    //if previous result is not the same, analyze QR
-        //        if (result != null && timeoutB == false)
-        //        {
-
-        //            QrContent = result.ToString();
-        //            String[] qrcontent = QrContent.Split(',');
-        //            String QRContent = qrcontent[0];
-        //            String query = $"select * from homeownerAccount where Name = '{QRContent}'";
-
-        //        try
-        //        {
-        //            connection = new SqlConnection(connectionString);
-        //            SqlCommand cmd = new SqlCommand(query, connection);
-        //            connection.Open();
-        //            SqlDataReader reader = cmd.ExecuteReader();
-        //            if (!reader.Read())
-        //            {
-        //                MessageBox.Show("Account does not exist.");
-        //            }
-        //            else
-        //            {
-
-
-        //                label1.Text = QRContent;
-        //                timeoutB = true;
-        //                timeout.Start();
-        //            }
-        //        }
-        //        catch (Exception e)
-        //        {
-
-        //            throw e;
-        //        }
-        //        }
-        //    picBox.Image = bitmap;
-
-        //}
-
-
-        //string prevResult;
-        //private void VideoCaptureDevice_Form(object sender, AForge.Video.NewFrameEventArgs eventArgs)
-        //{
-        //    Bitmap bitmap = (Bitmap)eventArgs.Frame.Clone();
-        //    BarcodeReader barcode = new BarcodeReader();
-        //    var result = barcode.Decode(bitmap);
-
-
-
-
-        //    if (result != null)
-        //    {
-        //        if (!result.ToString().Equals(prevQr))
-        //        {
-
-
-        //            QrContent = result.ToString();
-        //            String[] qrcontent = QrContent.Split(',');
-        //            String QRContent = qrcontent[0];
-        //            String query = $"select * from homeownerAccount where Name = '{QRContent}'";
-
-        //            using (connection = new SqlConnection(connectionString))
-        //            using (SqlCommand cmd = new SqlCommand(query, connection))
-        //            {
-        //                connection.Open();
-        //                SqlDataReader reader = cmd.ExecuteReader();
-        //                if (!reader.Read())
-        //                {
-        //                    MessageBox.Show("Account does not exist.");
-        //                }
-        //                else
-        //                {
-        //                    MessageBox.Show("Gates open.");
-        //                    prevQr = result.ToString();
-
-        //                }
-        //            }
-        //        }
-        //        else
-        //        {
-        //            for (int x = 0; x <= 100000; x++)
-        //            {
-        //                int y = x;
-        //                if (y == 100000)
-        //                {
-        //                    MessageBox.Show(prevQr);
-        //                    prevQr = null;
-
-        //                }
-        //            }
-        //        }
-        //    }
-
-        //    picBox.Image = bitmap;
-
-        //}
 
         private void ScanQrCode_FormClosed(object sender, FormClosedEventArgs e)
         {

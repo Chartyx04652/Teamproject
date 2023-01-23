@@ -338,3 +338,4 @@ E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\zxing.xml
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\bin\Debug\zxing.presentation.xml
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.HistoryPageAccount.resources
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.LoginForm.resources
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Debug\QrSystem1.LoginForm.resources

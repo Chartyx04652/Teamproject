@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Drawing.Imaging;
+using System.IO;
 
 namespace QrSystem1
 {
@@ -17,6 +18,7 @@ namespace QrSystem1
     {
         String connectionString;
         SqlConnection connection;
+        String path;
         public VisitorsAccount()
         {
             InitializeComponent();
@@ -108,14 +110,23 @@ namespace QrSystem1
                 {
                     try
                     {
-                        String query = "insert into visitorAccount (Name, purposeOfVisit) values ('" + NameText1.Text + "', '" + PurposeOfVisit.Text + "')";
+                        byte[] imgbt = null;
+                        FileStream fstream = new FileStream(path, FileMode.Open, FileAccess.Read);
+                        BinaryReader br = new BinaryReader(fstream);
+                        imgbt = br.ReadBytes((int)fstream.Length);
+
+
+                        String query = "insert into visitorAccount (Name, purposeOfVisit, idPicture) values ('" + NameText1.Text + "', '" + PurposeOfVisit.Text + "',@IMG)";
 
                         using (connection = new SqlConnection(connectionString))
                         using (SqlCommand cmd = new SqlCommand(query, connection))
-
+                            
 
                         {
                             connection.Open();
+                            cmd.Parameters.Add(new SqlParameter("@IMG", imgbt));
+                            SqlDataReader reader;
+                            reader = cmd.ExecuteReader();
 
                             QRCoder.QRCodeGenerator QG = new QRCoder.QRCodeGenerator();
                             var Mydata = NameText1.Text;
@@ -125,7 +136,6 @@ namespace QrSystem1
                             var code = new QRCoder.QRCode(Mydata3);
                             pictureimage1.Image = code.GetGraphic(3);
 
-                            cmd.ExecuteNonQuery();
                             MessageBox.Show("Account succefully created.");
                             NameText1.Text = null;
                             PurposeOfVisit.Text = null;
@@ -171,7 +181,7 @@ namespace QrSystem1
                 if(dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
                     imageLocation = dialog.FileName;
-
+                    path = imageLocation;
                     pictureBox1.ImageLocation = imageLocation;
                 }
 

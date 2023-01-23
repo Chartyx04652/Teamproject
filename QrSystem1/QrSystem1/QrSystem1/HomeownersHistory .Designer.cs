@@ -37,6 +37,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.homeownerAccountDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,8 +49,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.homeownerAccountTableAdapter = new QrSystem1.UserAccountDataSet1TableAdapters.homeownerAccountTableAdapter();
             this.tableAdapterManager = new QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
@@ -141,7 +140,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel2.Controls.Add(this.btnSearch);
             this.panel2.Controls.Add(this.txtSearch);
             this.panel2.Controls.Add(this.homeownerAccountDataGridView);
             this.panel2.Controls.Add(this.label15);
@@ -152,8 +150,17 @@
             this.panel2.Size = new System.Drawing.Size(1151, 708);
             this.panel2.TabIndex = 1;
             // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(680, 10);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(314, 20);
+            this.txtSearch.TabIndex = 12;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
             // homeownerAccountDataGridView
             // 
+            this.homeownerAccountDataGridView.AllowUserToAddRows = false;
             this.homeownerAccountDataGridView.AutoGenerateColumns = false;
             this.homeownerAccountDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.homeownerAccountDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -167,6 +174,7 @@
             this.homeownerAccountDataGridView.Name = "homeownerAccountDataGridView";
             this.homeownerAccountDataGridView.Size = new System.Drawing.Size(1148, 672);
             this.homeownerAccountDataGridView.TabIndex = 8;
+            this.homeownerAccountDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.homeownerAccountDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -243,24 +251,6 @@
             this.tableAdapterManager.visitorAccountTableAdapter = null;
             this.tableAdapterManager.visitorHistoryTableAdapter = null;
             // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(680, 10);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(314, 20);
-            this.txtSearch.TabIndex = 12;
-            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(599, 10);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 13;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
             // HomeownersHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,6 +299,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.Button btnSearch;
     }
 }

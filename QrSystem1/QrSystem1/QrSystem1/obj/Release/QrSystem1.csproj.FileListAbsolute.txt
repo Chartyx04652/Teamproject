@@ -422,3 +422,4 @@ E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.c
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.csproj.CopyComplete
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.exe
 E:\Teamproject\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.pdb
+C:\Users\Adachi Tenka\Desktop\teamproj\Teamproject\QrSystem1\QrSystem1\QrSystem1\obj\Release\QrSystem1.LoginForm.resources

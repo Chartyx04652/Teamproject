@@ -294,6 +294,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="Createnewaccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -359,6 +360,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>UserAccountDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccountDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserAccountDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="VisitorsAccount.cs">
       <SubType>Form</SubType>
@@ -446,6 +452,17 @@
     </None>
     <None Include="UserAccountDataSet1.xss">
       <DependentUpon>UserAccountDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="UserAccountDataSet2.xsc">
+      <DependentUpon>UserAccountDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="UserAccountDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserAccountDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UserAccountDataSet2.xss">
+      <DependentUpon>UserAccountDataSet2.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

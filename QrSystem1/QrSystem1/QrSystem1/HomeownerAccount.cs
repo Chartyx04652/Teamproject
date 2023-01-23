@@ -151,8 +151,13 @@ namespace QrSystem1
 
         private void ContactText_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (Char.IsDigit(e.KeyChar)) return;
-            if (Char.IsControl(e.KeyChar)) return;
+            if (Char.IsDigit(e.KeyChar)) return;      
+            if (e.KeyChar == (char)Keys.Return)
+            {
+                e.Handled = true;
+                button2.PerformClick();
+            }
+            if (Char.IsControl(e.KeyChar)) return;   
             e.Handled = true;
         }
 
