@@ -38,29 +38,29 @@
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.visitorAccountDataGridView = new System.Windows.Forms.DataGridView();
+            this.visitorAccountBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.userAccountDataSet2 = new QrSystem1.UserAccountDataSet2();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.visitorAccountBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.userAccountDataSet1 = new QrSystem1.UserAccountDataSet1();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.visitorAccountBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.userAccountDataSet1 = new QrSystem1.UserAccountDataSet1();
             this.visitorAccountTableAdapter = new QrSystem1.UserAccountDataSet1TableAdapters.visitorAccountTableAdapter();
             this.tableAdapterManager = new QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager();
-            this.userAccountDataSet2 = new QrSystem1.UserAccountDataSet2();
-            this.visitorAccountBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.visitorAccountTableAdapter1 = new QrSystem1.UserAccountDataSet2TableAdapters.visitorAccountTableAdapter();
             this.tableAdapterManager1 = new QrSystem1.UserAccountDataSet2TableAdapters.TableAdapterManager();
-            this.visitorAccountDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.visitorAccountDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.visitorAccountBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.visitorAccountBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.visitorAccountBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.visitorAccountDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -166,6 +166,37 @@
             this.panel2.Size = new System.Drawing.Size(1131, 708);
             this.panel2.TabIndex = 1;
             // 
+            // visitorAccountDataGridView
+            // 
+            this.visitorAccountDataGridView.AllowUserToAddRows = false;
+            this.visitorAccountDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.visitorAccountDataGridView.AutoGenerateColumns = false;
+            this.visitorAccountDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.visitorAccountDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.visitorAccountDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.visitorAccountDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewImageColumn1});
+            this.visitorAccountDataGridView.DataSource = this.visitorAccountBindingSource1;
+            this.visitorAccountDataGridView.Location = new System.Drawing.Point(0, 38);
+            this.visitorAccountDataGridView.Name = "visitorAccountDataGridView";
+            this.visitorAccountDataGridView.Size = new System.Drawing.Size(1131, 670);
+            this.visitorAccountDataGridView.TabIndex = 11;
+            this.visitorAccountDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.visitorAccountDataGridView_CellContentClick);
+            // 
+            // visitorAccountBindingSource1
+            // 
+            this.visitorAccountBindingSource1.DataMember = "visitorAccount";
+            this.visitorAccountBindingSource1.DataSource = this.userAccountDataSet2;
+            // 
+            // userAccountDataSet2
+            // 
+            this.userAccountDataSet2.DataSetName = "UserAccountDataSet2";
+            this.userAccountDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // txtSearch
             // 
             this.txtSearch.Location = new System.Drawing.Point(653, 12);
@@ -173,16 +204,6 @@
             this.txtSearch.Size = new System.Drawing.Size(313, 20);
             this.txtSearch.TabIndex = 11;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
-            // 
-            // visitorAccountBindingSource
-            // 
-            this.visitorAccountBindingSource.DataMember = "visitorAccount";
-            this.visitorAccountBindingSource.DataSource = this.userAccountDataSet1;
-            // 
-            // userAccountDataSet1
-            // 
-            this.userAccountDataSet1.DataSetName = "UserAccountDataSet1";
-            this.userAccountDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button1
             // 
@@ -213,6 +234,16 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Visitors Account";
             // 
+            // visitorAccountBindingSource
+            // 
+            this.visitorAccountBindingSource.DataMember = "visitorAccount";
+            this.visitorAccountBindingSource.DataSource = this.userAccountDataSet1;
+            // 
+            // userAccountDataSet1
+            // 
+            this.userAccountDataSet1.DataSetName = "UserAccountDataSet1";
+            this.userAccountDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // visitorAccountTableAdapter
             // 
             this.visitorAccountTableAdapter.ClearBeforeFill = true;
@@ -225,16 +256,6 @@
             this.tableAdapterManager.UpdateOrder = QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.visitorAccountTableAdapter = this.visitorAccountTableAdapter;
             this.tableAdapterManager.visitorHistoryTableAdapter = null;
-            // 
-            // userAccountDataSet2
-            // 
-            this.userAccountDataSet2.DataSetName = "UserAccountDataSet2";
-            this.userAccountDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // visitorAccountBindingSource1
-            // 
-            this.visitorAccountBindingSource1.DataMember = "visitorAccount";
-            this.visitorAccountBindingSource1.DataSource = this.userAccountDataSet2;
             // 
             // visitorAccountTableAdapter1
             // 
@@ -250,27 +271,6 @@
             this.tableAdapterManager1.visitorAccountTableAdapter = this.visitorAccountTableAdapter1;
             this.tableAdapterManager1.visitorHistoryTableAdapter = null;
             // 
-            // visitorAccountDataGridView
-            // 
-            this.visitorAccountDataGridView.AllowUserToAddRows = false;
-            this.visitorAccountDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.visitorAccountDataGridView.AutoGenerateColumns = false;
-            this.visitorAccountDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.visitorAccountDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.visitorAccountDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.visitorAccountDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewImageColumn1});
-            this.visitorAccountDataGridView.DataSource = this.visitorAccountBindingSource1;
-            this.visitorAccountDataGridView.Location = new System.Drawing.Point(0, 38);
-            this.visitorAccountDataGridView.Name = "visitorAccountDataGridView";
-            this.visitorAccountDataGridView.Size = new System.Drawing.Size(1131, 670);
-            this.visitorAccountDataGridView.TabIndex = 11;
-            this.visitorAccountDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.visitorAccountDataGridView_CellContentClick);
-            // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
@@ -285,12 +285,11 @@
             // 
             // dataGridViewImageColumn1
             // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewImageColumn1.DataPropertyName = "idPicture";
             this.dataGridViewImageColumn1.HeaderText = "idPicture";
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Width = 54;
             // 
             // VisitorsHistory
             // 
@@ -309,11 +308,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.visitorAccountDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.visitorAccountBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.visitorAccountBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userAccountDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.visitorAccountBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.visitorAccountDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
