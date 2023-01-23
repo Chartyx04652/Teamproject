@@ -48,11 +48,6 @@ namespace QrSystem1
             // TODO: This line of code loads data into the 'userAccountDataSet1.homeownerHistory' table. You can move, or remove it, as needed.
             this.homeownerHistoryTableAdapter.Fill(this.userAccountDataSet1.homeownerHistory);
 
-
-
-
-
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

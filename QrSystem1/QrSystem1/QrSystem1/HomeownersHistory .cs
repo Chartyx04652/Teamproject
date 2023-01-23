@@ -59,7 +59,7 @@ namespace QrSystem1
         {
             connection = new SqlConnection(connectionString);
             datatable = new DataTable();
-            adapter = new SqlDataAdapter("select * from homeownerAccount where [Name] like '"+txtSearch.Text+"%'", connection);
+            adapter = new SqlDataAdapter("select * from homeownerAccount where [Name] like '%"+txtSearch.Text+"%'", connection);
             adapter.Fill(datatable);
             homeownerAccountDataGridView.DataSource = datatable;
         }
