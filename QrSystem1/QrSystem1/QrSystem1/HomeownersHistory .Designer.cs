@@ -172,7 +172,7 @@
             this.homeownerAccountDataGridView.DataSource = this.homeownerAccountBindingSource;
             this.homeownerAccountDataGridView.Location = new System.Drawing.Point(0, 36);
             this.homeownerAccountDataGridView.Name = "homeownerAccountDataGridView";
-            this.homeownerAccountDataGridView.Size = new System.Drawing.Size(1148, 672);
+            this.homeownerAccountDataGridView.Size = new System.Drawing.Size(1151, 672);
             this.homeownerAccountDataGridView.TabIndex = 8;
             this.homeownerAccountDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.homeownerAccountDataGridView_CellContentClick);
             // 
@@ -230,7 +230,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.button1.Location = new System.Drawing.Point(1091, 0);
+            this.button1.Location = new System.Drawing.Point(1113, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(40, 40);
             this.button1.TabIndex = 6;
