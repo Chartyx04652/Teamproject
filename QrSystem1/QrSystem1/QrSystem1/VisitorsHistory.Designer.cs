@@ -39,6 +39,20 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.visitorAccountDataGridView = new System.Windows.Forms.DataGridView();
+<<<<<<< HEAD
+=======
+            this.visitorAccountBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.userAccountDataSet2 = new QrSystem1.UserAccountDataSet2();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.visitorAccountBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.userAccountDataSet1 = new QrSystem1.UserAccountDataSet1();
+            this.visitorAccountTableAdapter = new QrSystem1.UserAccountDataSet1TableAdapters.visitorAccountTableAdapter();
+            this.tableAdapterManager = new QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager();
+            this.visitorAccountTableAdapter1 = new QrSystem1.UserAccountDataSet2TableAdapters.visitorAccountTableAdapter();
+            this.tableAdapterManager1 = new QrSystem1.UserAccountDataSet2TableAdapters.TableAdapterManager();
+>>>>>>> fa505eb397dc9789acc720bc0c5c33faf71aa66f
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -187,6 +201,93 @@
             this.visitorAccountDataGridView.TabIndex = 11;
             this.visitorAccountDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.visitorAccountDataGridView_CellContentClick);
             // 
+<<<<<<< HEAD
+=======
+            // visitorAccountBindingSource1
+            // 
+            this.visitorAccountBindingSource1.DataMember = "visitorAccount";
+            this.visitorAccountBindingSource1.DataSource = this.userAccountDataSet2;
+            // 
+            // userAccountDataSet2
+            // 
+            this.userAccountDataSet2.DataSetName = "UserAccountDataSet2";
+            this.userAccountDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(653, 12);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(313, 20);
+            this.txtSearch.TabIndex = 11;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.button1.Location = new System.Drawing.Point(1071, -7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(40, 52);
+            this.button1.TabIndex = 6;
+            this.button1.Text = ">";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.label1.Location = new System.Drawing.Point(6, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(170, 24);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Visitors Account";
+            // 
+            // visitorAccountBindingSource
+            // 
+            this.visitorAccountBindingSource.DataMember = "visitorAccount";
+            this.visitorAccountBindingSource.DataSource = this.userAccountDataSet1;
+            // 
+            // userAccountDataSet1
+            // 
+            this.userAccountDataSet1.DataSetName = "UserAccountDataSet1";
+            this.userAccountDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // visitorAccountTableAdapter
+            // 
+            this.visitorAccountTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.homeownerAccountTableAdapter = null;
+            this.tableAdapterManager.homeownerHistoryTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = QrSystem1.UserAccountDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.visitorAccountTableAdapter = this.visitorAccountTableAdapter;
+            this.tableAdapterManager.visitorHistoryTableAdapter = null;
+            // 
+            // visitorAccountTableAdapter1
+            // 
+            this.visitorAccountTableAdapter1.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager1
+            // 
+            this.tableAdapterManager1.AccountsTableAdapter = null;
+            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager1.homeownerAccountTableAdapter = null;
+            this.tableAdapterManager1.homeownerHistoryTableAdapter = null;
+            this.tableAdapterManager1.UpdateOrder = QrSystem1.UserAccountDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager1.visitorAccountTableAdapter = this.visitorAccountTableAdapter1;
+            this.tableAdapterManager1.visitorHistoryTableAdapter = null;
+            // 
+>>>>>>> fa505eb397dc9789acc720bc0c5c33faf71aa66f
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
@@ -201,12 +302,11 @@
             // 
             // dataGridViewImageColumn1
             // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewImageColumn1.DataPropertyName = "idPicture";
             this.dataGridViewImageColumn1.HeaderText = "idPicture";
             this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Width = 54;
             // 
             // visitorAccountBindingSource1
             // 
